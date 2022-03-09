@@ -50,7 +50,7 @@
                     <aside class="col-md-6">
                         <ul class="sportsmagazine-user-link">
                             <li><a href="#" data-toggle="modal" data-target="#signupModal">Subscribe</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i> Log In</a></li>
+                            <li><a href="{{route('login')}}"><i class="fa fa-sign-in"></i> Log In</a></li>
                         </ul>
                     </aside>
                 </div>
