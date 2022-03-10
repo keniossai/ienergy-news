@@ -13519,6 +13519,8 @@ var checkin = $('.range-from').datepicker({
         }
     });
 
+    // Summernote Editor
+
 })(window, document, window.jQuery);
 (function(window, document, $, undefined){
 
@@ -13527,7 +13529,7 @@ var checkin = $('.range-from').datepicker({
         if (summernote.length > 0) {
                 $('#summernote').summernote({
                     tabsize: 2,
-                    height: 250
+                    height: 350
                 });
         }
     });

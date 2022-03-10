@@ -219,6 +219,9 @@
                                             <a class="dropdown-item d-flex nav-link" href="settings">
                                                 <i class=" ti ti-settings pr-2 text-info"></i> Settings
                                             </a>
+                                            <a class="dropdown-item d-flex nav-link" href="lockscreen">
+                                                <i class=" ti ti-lock pr-2 text-dark"></i> Lockscreen
+                                            </a>
                                             <a class="dropdown-item d-flex nav-link" href="javascript:void(0)">
                                                 <i class="fa fa-compass pr-2 text-warning"></i> Need help?
                                             </a>
@@ -324,28 +327,18 @@
                             <li>
                                 <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Settings</span><span class="nav-label label label-primary">12</span></a>
                                 <ul aria-expanded="false">
-                                    <li> <a href="page-account-settings.html">Account Settings</a> </li>
-                                    <li> <a href="page-clients.html">Clients</a> </li>
-                                    <li> <a href="page-contacts.html">Contacts</a> </li>
-                                    <li> <a href="page-employees.html">Employees</a> </li>
-                                    <li> <a href="page-faq.html">FAQ</a> </li>
-                                    <li> <a href="page-file-manager.html">File Manager</a> </li>
-                                    <li> <a href="page-gallery.html">Gallery</a> </li>
-
-                                    <li> <a href="page-pricing.html">Pricing</a> </li>
-                                    <li> <a href="page-task-list.html">Task List</a> </li>
-                                    <li> <a href="page-404.html">404</a> </li>
-                                    <li> <a href="page-500.html">500</a> </li>
-                                    <li> <a href="page-coming-soon.html">Coming Soon</a> </li>
+                                    <li> <a href="settings">Account Settings</a> </li>
+                                    <li> <a href="users">Users</a> </li>
                                 </ul>
                             </li>
                             <li>
                                 <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
                                 <ul aria-expanded="false">
-                                    <li> <a href="auth-login.html">Login</a> </li>
-                                    <li> <a href="auth-register.html">Register</a> </li>
-                                    <li> <a href="auth-lockscreen.html">Lock Screen</a> </li>
-                                </ul>
+                                        <form action="{{route('logout')}}" method="POST">
+                                        <li> <a href="{{route('logout')}}">Logout</a> </li>
+                                    </form>
+                                        <li> <a href="lockscreen">Lock Screen</a> </li>
+                                    </ul>
                             </li>
                         </ul>
                     </div>
@@ -359,7 +352,7 @@
                 <footer class="footer">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-left">
-                            <p>&copy; Copyright 2019. All rights reserved.</p>
+                            <p>&copy; Copyright 2022. All rights reserved.</p>
                         </div>
                     <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
                             <p><a target="_blank" href="">Developed By Ken Ossai</a></p>

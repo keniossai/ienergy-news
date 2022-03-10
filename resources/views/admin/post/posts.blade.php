@@ -20,7 +20,7 @@
                                     <a href="index.html"><i class="ti ti-home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                    Pages
+                                    Dashboard
                                 </li>
                                 <li class="breadcrumb-item active text-primary" aria-current="page">Posts</li>
                             </ol>
@@ -40,19 +40,7 @@
                             <div class="card-heading">
                                 <h4 class="card-title">Posts</h4>
                             </div>
-                            <div class="mt-xxs-0 mt-3 btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-sm btn-round  btn-primary">
-                                    <input type="radio" name="options" id="option1" checked="">
-                                    Today
-                                </label>
-                                <label class="btn btn-sm btn-outline-primary">
-                                    <input type="radio" name="options" id="option2">
-                                    Week
-                                </label>
-                                <label class="btn btn-sm btn-round btn-outline-primary">
-                                    <input type="radio" name="options" id="option3"> Month
-                                </label>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="card-body py-0 table-responsive">
@@ -72,7 +60,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/01.jpg" class="img-fluid" alt="Clients-01">
+                                                <img src="{{asset('panel/img/avtar/01.jpg')}}" class="img-fluid" alt="Clients-01">
                                             </div>
                                             <p class="font-weight-bold">Adrian Demiandro</p>
                                         </div>
@@ -91,7 +79,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/02.jpg" class="img-fluid" alt="Clients-02">
+                                                <img src="{{asset('panel/img/avtar/02.jpg')}}" class="img-fluid" alt="Clients-02">
                                             </div>
                                             <p class="font-weight-bold">Jenny Smithdro</p>
                                         </div>
@@ -110,7 +98,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/03.jpg" class="img-fluid" alt="Clients-03">
+                                                <img src="{{asset('panel/img/avtar/03.jpg')}}" class="img-fluid" alt="Clients-03">
                                             </div>
                                             <p class="font-weight-bold">Brian Joedro</p>
                                         </div>
@@ -129,7 +117,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/04.jpg" class="img-fluid" alt="Clients-04">
+                                                <img src="{{asset('panel/img/avtar/04.jpg')}}" class="img-fluid" alt="Clients-04">
                                             </div>
                                             <p class="font-weight-bold">Sandradro Garett</p>
                                         </div>
@@ -148,7 +136,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/05.jpg" class="img-fluid" alt="Clients-05">
+                                                <img src="{{asset('panel/img/avtar/05.jpg')}}" class="img-fluid" alt="Clients-05">
                                             </div>
                                             <p class="font-weight-bold">Garydro</p>
                                         </div>
@@ -167,7 +155,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/06.jpg" class="img-fluid" alt="Clients-06">
+                                                <img src="{{asset('panel/img/avtar/06.jpg')}}" class="img-fluid" alt="Clients-06">
                                             </div>
                                             <p class="font-weight-bold">Andrew dro</p>
                                         </div>
@@ -186,7 +174,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/07.jpg" class="img-fluid" alt="Clients-07">
+                                                <img src="{{asset('panel/img/avtar/07.jpg')}}" class="img-fluid" alt="Clients-07">
                                             </div>
                                             <p class="font-weight-bold">Stonedro</p>
                                         </div>
@@ -205,7 +193,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/08.jpg" class="img-fluid" alt="Clients-08">
+                                                <img src="{{asset('panel/img/avtar/08.jpg')}}" class="img-fluid" alt="Clients-08">
                                             </div>
                                             <p class="font-weight-bold">Jimmy dron</p>
                                         </div>
@@ -224,7 +212,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/09.jpg" class="img-fluid" alt="Clients-09">
+                                                <img src="{{asset('panel/img/avtar/09.jpg')}}" class="img-fluid" alt="Clients-09">
                                             </div>
                                             <p class="font-weight-bold">Richard dro</p>
                                         </div>
@@ -243,7 +231,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/01.jpg" class="img-fluid" alt="Clients-01">
+                                                <img src="{{asset('panel/img/avtar/01.jpg')}}" class="img-fluid" alt="Clients-01">
                                             </div>
                                             <p class="font-weight-bold">Garettnice</p>
                                         </div>
@@ -262,7 +250,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/02.jpg" class="img-fluid" alt="Clients-02">
+                                                <img src="{{asset('panel/img/avtar/02.jpg')}}" class="img-fluid" alt="Clients-02">
                                             </div>
                                             <p class="font-weight-bold">Adriannyt</p>
                                         </div>
@@ -281,7 +269,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/03.jpg" class="img-fluid" alt="Clients-03">
+                                                <img src="{{asset('panel/img/avtar/03.jpg')}}" class="img-fluid" alt="Clients-03">
                                             </div>
                                             <p class="font-weight-bold">Michaelbrt</p>
                                         </div>
@@ -300,7 +288,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/04.jpg" class="img-fluid" alt="Clients-04">
+                                                <img src="{{asset('panel/img/avtar/04.jpg')}}" class="img-fluid" alt="Clients-04">
                                             </div>
                                             <p class="font-weight-bold">Andrewwer</p>
                                         </div>
@@ -319,7 +307,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/05.jpg" class="img-fluid" alt="Clients-05">
+                                                <img src="{{asset('panel/img/avtar/05.jpg')}}" class="img-fluid" alt="Clients-05">
                                             </div>
                                             <p class="font-weight-bold">Braincdt</p>
                                         </div>
@@ -338,7 +326,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div class="bg-img mr-4">
-                                                <img src="panel/img/avtar/06.jpg" class="img-fluid" alt="Clients-06">
+                                                <img src="{{asset('panel/img/avtar/06.jpg')}}" class="img-fluid" alt="Clients-06">
                                             </div>
                                             <p class="font-weight-bold">Sandrapot</p>
                                         </div>

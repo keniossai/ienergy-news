@@ -20,7 +20,7 @@
                                     <a href="index.html"><i class="ti ti-home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                    Pages
+                                    Dashboard
                                 </li>
                                 <li class="breadcrumb-item active text-primary" aria-current="page">Account Settings</li>
                             </ol>

@@ -15,4 +15,12 @@ class DashBoardController extends Controller
 
         return view('admin.calender.index');
     }
+    public function lock(){
+
+        return view('auth.lock');
+    }
+    public function contact(){
+
+        return view('admin.contact.contact');
+    }
 }

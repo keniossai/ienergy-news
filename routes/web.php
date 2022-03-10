@@ -31,7 +31,10 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function()
 {
     Route::get('admin/dashboard', [DashBoardController::class , 'dashboard'])->name('dashboard');
     Route::get('admin/calendar', [DashBoardController::class , 'index'])->name('index');
+    Route::get('admin/lockscreen', [DashBoardController::class , 'lock'])->name('lock');
+    Route::get('admin/users', [DashBoardController::class , 'contact'])->name('contact');
     Route::get('admin/posts', [PostController::class, 'show'])->name('posts');
+    Route::get('admin/create', [PostController::class, 'create'])->name('create');
     Route::get('admin/comments', [CommentsController::class, 'comments'])->name('comments');
     Route::get('admin/settings', [SettingsController::class, 'index'])->name('settings');
 
