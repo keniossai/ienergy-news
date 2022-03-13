@@ -8,6 +8,9 @@ use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\RegionNewsController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\CategoryController;
 // use App\Http\Controllers\AdminPostController;
 
 /*
@@ -21,49 +24,19 @@ use App\Http\Controllers\SettingsController;
 |
 */
 
-Route::get('/', [HomePageController::class, 'homepage'])->name('homepage');
-Route::get('/newsdetails', [NewsDetailController::class, 'newsdetails'])->name('newsdetails');
-Route::get('/latestnews', [LatestNewsController::class, 'latestnews'])->name('latestnews');
+// Auth::routes();
+
+// Route::get('/', [HomePageController::class, 'homepage'])->name('homepage');
+// Route::get('/newsdetails', [NewsDetailController::class, 'newsdetails'])->name('newsdetails');
+// Route::get('/latestnews', [LatestNewsController::class, 'latestnews'])->name('latestnews');
+// Route::get('/region', [RegionNewsController::class, 'region'])->name('region');
 
 
 
-Route::group(['middleware' => ['auth:sanctum', 'verified']], function()
+Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'verified']], function()
 {
-    Route::get('admin/dashboard', [DashBoardController::class , 'dashboard'])->name('dashboard');
-    Route::get('admin/calendar', [DashBoardController::class , 'index'])->name('index');
-    Route::get('admin/lockscreen', [DashBoardController::class , 'lock'])->name('lock');
-    Route::get('admin/users', [DashBoardController::class , 'contact'])->name('contact');
-    Route::get('admin/posts', [PostController::class, 'show'])->name('posts');
-    Route::get('admin/create', [PostController::class, 'create'])->name('create');
-    Route::get('admin/comments', [CommentsController::class, 'comments'])->name('comments');
-    Route::get('admin/settings', [SettingsController::class, 'index'])->name('settings');
+    Route::get('/dashboard', [DashBoardController::class , 'index'])->name('dashboard');
 
+    Route::resource('category', CategoryController::class);
+    Route::resource('posts', PostController::class);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Study Route properly before using the commented code below
-
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
-// Route::middleware(['auth:sanctum', 'verified'])->get('/posts', function () {
-//     return view('admin.post.posts');
-// })->name('posts');
-// Route::middleware(['auth:sanctum', 'verified'])->get('/calendar', function () {
-//     return view('admin.calender.index');
-// })->name('index');

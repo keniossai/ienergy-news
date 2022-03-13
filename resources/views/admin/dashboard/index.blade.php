@@ -33,7 +33,7 @@
                         <a href="calendar" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Calendar">
                             <i class="fa fa-calendar-o btn btn-icon text-cyan"></i>
                         </a>
-                        <a class="btn btn-primary" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="btn btn-primary" href="{{ route('posts.create')}}">
                             Add New
                         </a>
                     </div>

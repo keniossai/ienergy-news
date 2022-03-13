@@ -13546,6 +13546,8 @@ $('#sweetalert-01').click(function(e) {
     })
 });
 
+$('.file-upload').file_upload();
+
 
 $('#sweetalert-02').click(function(e) {
     swal(

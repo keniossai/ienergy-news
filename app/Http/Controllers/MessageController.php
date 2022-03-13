@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
 
-class PostController extends Controller
+class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('admin.post.posts');
+        return view('admin.mail.index');
     }
 
     /**
@@ -24,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.post.create');
+        //
     }
 
     /**
@@ -44,15 +43,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        // 
+        //
     }
-
-    // public function media()
-    // {
-    //     return view('admin.post.media');
-    // }
 
     /**
      * Show the form for editing the specified resource.

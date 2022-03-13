@@ -7,11 +7,11 @@ use App\Models\User;
 
 class DashBoardController extends Controller
 {
-    public function dashboard(){
-
-        return view('dashboard');
-    }
     public function index(){
+
+        return view('admin.dashboard.index');
+    }
+    public function calendar(){
 
         return view('admin.calender.index');
     }

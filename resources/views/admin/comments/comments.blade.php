@@ -32,25 +32,40 @@
         </div>
         <!-- end row -->
     
-                <div class="card card-statistics mb-0">
-                    <div class="card-header">
-                        <h4 class="card-title">All Comments</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-columns">
-                            <div class="card p-3">
-                                <blockquote class="blockquote mb-0 card-body">
-                                    <p>Use a past defeat as a motivator. Remind yourself you have nowhere to go except up as you have already been at the bottom.</p>
-                                    <footer class="blockquote-footer">
-                                        <small class="text-muted">
-                                            Someone famous in <cite title="Source Title">Source Title</cite>
-                                        </small>
-                                    </footer>
-                                </blockquote>
-                            </div>
-                        </div>
+        <div class="col-12">
+            <div class="card card-statistics">
+                <div class="card-header">
+                    <div class="card-heading">
+                        <h4 class="card-title">Comment List</h4>
                     </div>
                 </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3 mb-3 mb-xxs-0 img-fluid" src="{{asset('panel/img/avtar/08.jpg')}}" alt="image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Wdcorbitt</h5>
+                                Without clarity, you send a very garbled message out to the Universe. We know that the Law of Attraction says that we will attract what we focus on, so if we don’t have clarity, we will attract confusion.
+                            </div>
+                        </li>
+                        <li class="media my-4">
+                            <img class="mr-3 mb-3 mb-xxs-0 img-fluid" src="{{asset('panel/img/avtar/09.jpg')}}" alt="image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">AnnaHorno</h5>
+                                The first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only for a select few people. As such, success really has nothing to do with luck, coincidence or fate. It really comes down to understanding the steps in the process and then executing on those steps.
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 mb-3 mb-xxs-0 img-fluid" src="{{asset('panel/img/avtar/01.jpg')}}" alt="image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">M_morsch</h5>
+                                We carry them with us like rocks in a knapsack, and then use them to sabotage our success.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
         <!-- end row -->

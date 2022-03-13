@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('panel/css/vendors.css')}}" />
     <!-- app style -->
     <link rel="stylesheet" type="text/css" href="{{asset('panel/css/style.css')}}" />
-    @livewireStyles
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 
 <body>
@@ -27,13 +27,13 @@
         <!-- begin app-wrap -->
         <div class="app-wrap">
             <!-- begin pre-loader -->
-            <div class="loader">
+            {{-- <div class="loader">
                 <div class="h-100 d-flex justify-content-center">
                     <div class="align-self-center">
                         <img src="{{asset('panel/img/loader/loader.svg')}}" alt="loader">
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <header class="app-header top-bar">
                 <!-- begin navbar -->
@@ -244,88 +244,33 @@
                         <ul class="metismenu " id="sidebarNav">
                             <li class="nav-static-title">iENERGY CMS</li>
                             <li class="active">
-                                <a class="has-arrow" href="dashboard" aria-expanded="false">
+                                <a class="has-arrow" href="{{ route('dashboard')}}" aria-expanded="false">
                                     <i class="nav-icon ti ti-home"></i>
                                     <span class="nav-title">Dashboard</span>
                                     <span class="nav-label label label-danger">9</span>
                                 </a></li>
-                            <li><a href="posts" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span class="nav-title">Posts</span></a> </li>
-                            <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-music"></i><span class="nav-title">Media</span></a> </li>
+                                <li>
+                                    <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-pin"></i><span class="nav-title">Posts</span> </a>
+                                    <ul aria-expanded="false">
+                                        <li> <a href="{{ route('posts.index')}}">All Posts</a> </li>
+                                        <li> <a href="{{ route('posts.create')}}">Add New</a> </li>
+                                        <li> <a href="{{ route('category.index')}}">Categories</a> </li>
+                                        <li> <a href="tags">Tags</a> </li>
+                                    </ul>
+                                </li>
+                            <li><a href="media"><i class="nav-icon ti ti-video"></i><span class="nav-title">Media</span><span class="nav-label label label-success">New</span></a> </li>
+                            <li><a href="messages"><i class="nav-icon ti ti-email"></i><span class="nav-title">Messages</span><span class="nav-label label label-success">2</span></a> </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Pages</span> </a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="/">Home</a> </li>
+                                    <li> <a href="about">About</a> </li>
+                                </ul>
+                            </li>
                             <li><a href="calendar"><i class="nav-icon ti ti-calendar"></i><span class="nav-title">Calendar</span></a></li>
-                            <li><a href="comments" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span class="nav-title">Comments</span><span class="nav-label label label-danger">2</span></a> </li>
+                            <li><a href="comments"><i class="nav-icon ti ti-comment"></i><span class="nav-title">Comments</span><span class="nav-label label label-danger">2</span></a> </li>
                             <li>
-                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-bag"></i> <span class="nav-title">Appearance</span></a>
-                                <ul aria-expanded="false">
-                                    <li> <a href="ui-alerts.html">Alerts</a> </li>
-                                    <li> <a href="ui-accordions.html">Accordions</a> </li>
-                                    <li> <a class="has-arrow" href="javascript: void(0);">Buttons</a>
-                                        <ul aria-expanded="false">
-                                            <li> <a href="ui-button.html">Default Buttons</a> </li>
-                                            <li> <a href="ui-button-icon.html">Icon Buttons</a> </li>
-                                            <li> <a href="ui-button-block.html">Block Buttons</a> </li>
-                                            <li> <a href="ui-button-social.html">Social Buttons</a> </li>
-                                            <li> <a href="ui-button-groups.html">Group Buttons</a> </li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="ui-badges.html">Badges</a> </li>
-                                    <li> <a href="ui-cards.html">Cards</a> </li>
-                                    <li> <a href="ui-carousel.html">Carousel</a> </li>
-                                    <li> <a href="ui-dropdowns.html">Dropdowns</a> </li>
-
-                                    <li> <a href="ui-grid.html">Grid</a> </li>
-                                    <li> <a href="ui-list-group.html">List Group</a> </li>
-                                    <li> <a href="ui-lightbox.html">Light Box</a> </li>
-                                    <li> <a href="ui-modals.html">Modals</a> </li>
-                                    <li> <a href="ui-media.html">Media</a> </li>
-                                    <li> <a href="ui-nestable-list.html">Nestable List</a> </li>
-                                    <li> <a href="ui-pagination.html">Pagination</a> </li>
-                                    <li> <a href="ui-progressbars.html">Progress Bars</a> </li>
-
-                                    <li> <a href="ui-sweet-alert.html">Sweet Alert</a> </li>
-                                    <li> <a href="ui-tabs.html">Tabs</a> </li>
-                                    <li> <a href="ui-nav.html">Nav</a> </li>
-                                    <li> <a href="ui-tooltips-popovers.html">Tooltips & Popovers</a> </li>
-                                    <li> <a href="ui-typography.html">Typography</a> </li>
-                                    <li> <a href="ui-toastr.html">Toastr</a> </li>
-                                    <li> <a href="ui-video.html">Video</a> </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-info"></i><span class="nav-title">Icons</span> </a>
-                                <ul aria-expanded="false">
-                                    <li> <a href="icons-cryptocurrency.html">Cryptocurrency Icons</a> </li>
-                                    <li> <a href="icons-drip.html">Drip Icons</a> </li>
-                                    <li> <a href="icons-dash.html">Dash Icons</a> </li>
-                                    <li> <a href="icons-feather.html">Feather Icons</a> </li>
-                                    <li> <a href="icons-fontawesome.html">Font Awesome</a> </li>
-                                    <li> <a href="icons-ion.html">Ion Icons</a> </li>
-                                    <li> <a href="icons-weather.html">Weather Icons</a> </li>
-                                    <li> <a href="icons-material.html">Material Icons</a> </li>
-                                    <li> <a href="icons-themify.html">Themify Icons</a> </li>
-                                </ul>
-                            </li>
-                            <li><a href="widget-social.html"> <i class="nav-icon ti ti-layout-grid4-alt"></i> <span class="nav-title">Users</span> <span class="nav-label label label-success">New</span> </a></li>
-                            <li><a href=""><i class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Tools</span></a></li>
-                            <li>
-                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-pencil-alt"></i> <span class="nav-title">Forms</span> </a>
-                                <ul aria-expanded="false">
-                                    <li> <a href="form-autonumeric.html">Autonumeric</a> </li>
-                                    <li> <a href="form-editors.html">Editors</a> </li>
-                                    <li> <a href="form-elements.html">Elements</a> </li>
-                                    <li> <a href="form-file-upload.html">Drop Zone</a> </li>
-                                    <li> <a href="form-input-groups.html">Input Groups</a> </li>
-                                    <li> <a href="form-inputmask.html">Input Masks</a> </li>
-                                    <li> <a href="form-layouts.html">Forms Layouts</a> </li>
-                                    <li> <a href="form-listbox.html">Listbox</a> </li>
-                                    <li> <a href="form-pickers.html">Pickers</a> </li>
-                                    <li> <a href="form-range-slider.html">Range Slider</a> </li>
-                                    <li> <a href="form-selects.html">Selects</a> </li>
-                                    <li> <a href="form-switchers.html">Switchers</a> </li>
-                                    <li> <a href="form-validation.html">Validation</a> </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Settings</span><span class="nav-label label label-primary">12</span></a>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Settings</span></a>
                                 <ul aria-expanded="false">
                                     <li> <a href="settings">Account Settings</a> </li>
                                     <li> <a href="users">Users</a> </li>
@@ -334,11 +279,15 @@
                             <li>
                                 <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
                                 <ul aria-expanded="false">
-                                        <form action="{{route('logout')}}" method="POST">
+                                    <form action="{{route('logout')}}" method="POST">
                                         <li> <a href="{{route('logout')}}">Logout</a> </li>
                                     </form>
                                         <li> <a href="lockscreen">Lock Screen</a> </li>
-                                    </ul>
+                                </ul>
+                            </li>
+                            <li class="sidebar-banner p-4 bg-gradient text-center m-3 d-block rounded">
+                                <h5 class="text-white mb-1">iEnergyAfrica</h5>
+                                <a class="btn btn-square bg-dark btn-xl d-inline-block mt-2 mb-0" href="/"> Go to website</a>
                             </li>
                         </ul>
                     </div>
@@ -365,11 +314,19 @@
 <!-- end app -->
 
 <!-- plugins -->
-@livewireScripts
 <script src="{{asset('panel/js/vendors.js')}}"></script>
 
 <!-- custom app -->
 <script src="{{asset('panel/js/app.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+    @if(Session::has('success'))
+    toastr.success("{{ Session::get('success') }}");
+    @endif
+    $(document).ready(function () {
+      bsCustomFileInput.init()
+    });
+  </script>
 </body>
 
 
