@@ -255,7 +255,7 @@
                                         <li> <a href="{{ route('posts.index')}}">All Posts</a> </li>
                                         <li> <a href="{{ route('posts.create')}}">Add New</a> </li>
                                         <li> <a href="{{ route('category.index')}}">Categories</a> </li>
-                                        <li> <a href="tags">Tags</a> </li>
+                                        <li> <a href="{{ route('tag.index')}}">Tags</a> </li>
                                     </ul>
                                 </li>
                             <li><a href="media"><i class="nav-icon ti ti-video"></i><span class="nav-title">Media</span><span class="nav-label label label-success">New</span></a> </li>

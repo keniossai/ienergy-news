@@ -11,7 +11,7 @@
                 <!-- begin page title -->
                 <div class="d-block d-sm-flex flex-nowrap align-items-center">
                     <div class="page-title mb-2 mb-sm-0">
-                        <h1>Edit Tag</h1>
+                        <h1>Tag List</h1>
                     </div>
                     <div class="ml-auto d-flex align-items-center">
                         <nav>
@@ -23,7 +23,7 @@
                                     Dashboard
                                 </li>
                                 <li class="breadcrumb-item"><a href="{{route('tag.index')}}">Tag list</a></li>
-                                <li class="breadcrumb-item active text-primary" aria-current="page">Edit tag</li>
+                                <li class="breadcrumb-item active text-primary" aria-current="page">Create Tag</li>
                             </ol>
                         </nav>
                         
@@ -40,9 +40,9 @@
                 <div class="card card-statistics">
                     <div class="card-header">
                         <div class="ml-auto d-flex justify-content-between align-items-center secondary-menu text-center">
-                            <h4 class="card-title">Edit tag - {{$tag->name}}</h4>
+                            <h4 class="card-title">Tag List</h4>
                             <a class="btn btn-primary" href="{{route('tag.index')}}">
-                                Back to tag List
+                                Back to Tag List
                             </a>
                         </div>
                         
@@ -51,20 +51,19 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12 col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                                <form action="{{ route('tag.update', [$tag->id]) }}" method="POST">
+                                <form action="{{route('tag.store')}}" method="POST">
                                     @csrf
-                                    @method('PUT')
                                     <div class="card-body">
                                         @include('includes.errors')
                                         <div class="form-group">
-                                            <label for="name">Tag Name</label>
-                                            <input type="name" name='name' value="{{ $tag->name }}" class="form-control" placeholder="Enter name">
+                                            <label for="name">tag Name</label>
+                                            <input type="name" name='name' id="name" class="form-control" placeholder="Enter name">
                                         </div>
                                         <div class="form-group">
                                             <label for="description">Description</label>
-                                            <textarea name="description" id="description" class="form-control" rows="4" placeholder="Enter description">{{ $tag->description }}</textarea>
+                                            <textarea name="description" id="description" class="form-control" rows="4" placeholder="Enter description"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Update Tag</button>
+                                        <button type="submit" class="btn btn-primary">Create tag</button>
                                     </div>
                                 </form>
                             </div>

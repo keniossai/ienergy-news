@@ -6,6 +6,7 @@ use App\Http\Controllers\NewsDetailController;
 use App\Http\Controllers\LatestNewsController;
 use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TagController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\RegionNewsController;
@@ -39,4 +40,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'verified']]
 
     Route::resource('category', CategoryController::class);
     Route::resource('posts', PostController::class);
+    Route::resource('tag', TagController::class);
 });

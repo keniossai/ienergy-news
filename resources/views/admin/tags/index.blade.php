@@ -11,7 +11,7 @@
                 <!-- begin page title -->
                 <div class="d-block d-sm-flex flex-nowrap align-items-center">
                     <div class="page-title mb-2 mb-sm-0">
-                        <h1>Category List</h1>
+                        <h1>Tag List</h1>
                     </div>
                     <div class="ml-auto d-flex align-items-center">
                         <nav>
@@ -22,7 +22,7 @@
                                 <li class="breadcrumb-item">
                                     Dashboard
                                 </li>
-                                <li class="breadcrumb-item active text-primary" aria-current="page">Category</li>
+                                <li class="breadcrumb-item active text-primary" aria-current="page">Tag</li>
                             </ol>
                         </nav>
                         
@@ -39,9 +39,9 @@
                 <div class="card card-statistics">
                     <div class="card-header">
                         <div class="ml-auto d-flex justify-content-between align-items-center secondary-menu text-center">
-                            <h4 class="card-title">Category List</h4>
-                            <a class="btn btn-primary" href="category/create">
-                                Add Category
+                            <h4 class="card-title">Tag List</h4>
+                            <a class="btn btn-primary" href="tag/create">
+                                Add Tag
                             </a>
                         </div>
                         
@@ -55,21 +55,19 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Slug</th>
-                                    <th scope="col">Post Count</th>
                                     <th scope="col">Action</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                @if($categories->count())
-                                    @foreach ($categories as $category)
+                                 @if($tags->count() > 0)
+                                    @foreach ($tags as $tag)
                                     <tr class="align-items-center">
-                                        <th scope="row align-items-center">{{$category->id}}</th>
-                                        <td>{{$category->name}}</td>
-                                        <td>{{$category->description}}</td>
-                                        <td>{{$category->id}}</td>
+                                        <th scope="row align-items-center">{{$tag->id}}</th>
+                                        <td>{{$tag->name}}</td>
+                                        <td>{{$tag->description}}</td>
                                         <td class="d-flex">
-                                            <a href="{{ route('category.edit', [$category->id]) }}" class="btn btn-icon btn-outline-info btn-round"><i class="ti ti-pencil"></i></a>
-                                            <form action="{{ route('category.destroy', [$category->id])}}" class="ml-2" method="POST">
+                                            <a href="{{ route('tag.edit', [$tag->id]) }}" class="btn btn-icon btn-outline-info btn-round"><i class="ti ti-pencil"></i></a>
+                                            <form action="{{ route('tag.destroy', [$tag->id])}}" class="ml-2" method="POST">
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="summit" class="btn btn-icon btn-outline-danger btn-round "><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -80,8 +78,8 @@
                                     @endforeach
                                  @else
                                      <tr>
-                                         <td colspan="5">
-                                            <h5 class="text-center">No category found.</h5>
+                                         <td colspan="4">
+                                            <h5 class="text-center">No tags found.</h5>
                                          </td>
                                      </tr>
                                  @endif

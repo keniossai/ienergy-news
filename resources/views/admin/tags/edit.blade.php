@@ -23,7 +23,7 @@
                                     Dashboard
                                 </li>
                                 <li class="breadcrumb-item"><a href="{{route('tag.index')}}">Tag list</a></li>
-                                <li class="breadcrumb-item active text-primary" aria-current="page">Edit tag</li>
+                                <li class="breadcrumb-item active text-primary" aria-current="page">Edit Tag</li>
                             </ol>
                         </nav>
                         
