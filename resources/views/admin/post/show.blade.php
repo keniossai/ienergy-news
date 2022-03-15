@@ -51,7 +51,7 @@
                                 <table class="table table-bordered table-pimary">
                                     <tbody>
                                         <tr>
-                                            <th>Image</th>
+                                            <th style="width: 200px">Image</th>
                                             <td>
                                                 <div style="max-width: 400px; max-height:400px;overflow:hidden">
                                                     <img src="{{ asset($post->image) }}" class="img-fluid" alt="">
@@ -79,8 +79,10 @@
                                             <td>{{ $post->user->name }}</td>
                                         </tr>
                                         <tr>
-                                            <th style="width: 200px">Description</th>
-                                            <td>{!! $post->description !!}</td>
+                                            <div>
+                                                <th style="width: 200px">Description</th>
+                                                <td>{!! $post->description !!}</td>
+                                            </div>
                                         </tr>
                                     </tbody>
                                 </table>

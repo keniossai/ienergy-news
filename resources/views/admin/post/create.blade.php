@@ -99,6 +99,20 @@
     <!-- end container-fluid -->
 </div>
 
+@endsection
 
+@section('style')
+    <link rel="stylesheet" href="{{asset('panel/css/summernote-bs4.min.css')}}">
+@endsection
 
+@section('script')
+    <script src="{{asset('panel/js/summernote-bs4.min.js')}}"></script>
+
+    <script>
+        $('#description').summernote({
+            placeholder: 'News Description',
+            tabsize: 2,
+            height: 300
+        });
+    </script>
 @endsection

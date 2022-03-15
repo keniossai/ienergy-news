@@ -63,19 +63,19 @@
                                             <td>{{$post->id}}</td>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <div style="max-width: 70px; max-height: 70px; overflow: hidden;">
+                                                    <div style="max-width: 100px; max-height: 100px; overflow: hidden;">
                                                         <img src="{{asset($post->image)}}" class="img-fluid" alt="">
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>{{$post->title}}</td>
-                                            <td>{{$post->category->name}}</td>
-                                            <td>
+                                            <td class="tagname">{{$post->category->name}}</td>
+                                            <td class="tagname">
                                                 @foreach ($post->tags as $tag)
                                                     <span class="badge badge-primary">{{$tag->name}}</span>
                                                 @endforeach
                                             </td>
-                                            <td>{{$post->user->name}}</td>
+                                            <td class="tagname">{{$post->user->name}}</td>
                                             <td class="d-flex">
                                                 <a href="{{ route('post.show', [$post->id])}}" class="btn btn-icon btn-outline-success btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-eye"></i></a>
                                                 <a href="{{ route('post.edit', [$post->id])}}" class="btn btn-icon btn-outline-info btn-round"><i class="ti ti-pencil"></i></a>
@@ -106,4 +106,11 @@
     </div>
     <!-- end container-fluid -->
 </div>
+
+<style>
+    .tagname {
+    vertical-align: middle;
+    white-space: nowrap !important;
+}
+</style>
 @endsection

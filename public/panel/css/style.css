@@ -39943,7 +39943,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 .table>tbody>tr>td {
     vertical-align: middle;
-    white-space: nowrap
+    /* white-space: nowrap */
 }
 
 .tabledit-toolbar {
