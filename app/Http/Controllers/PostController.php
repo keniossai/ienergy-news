@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Session;
 use App\Models\Category;
 use App\Models\Post;
-// use App\Models\Tag;
+use App\Models\Tag;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -30,9 +30,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        // $tags = Tag::all();
+        $tags = Tag::all();
         $categories = Category::all();
-        return view('admin.post.create', compact(['categories']));
+        return view('admin.post.create', compact(['categories', 'tags']));
     }
 
     /**
@@ -60,7 +60,7 @@ class PostController extends Controller
             'published_at' => Carbon::now(),
         ]);
 
-        // $post->tags()->attach($request->tags);
+        $post->tags()->attach($request->tags);
 
         if($request->hasFile('image')){
             $image = $request->image;
@@ -82,7 +82,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        // return view('admin.post.show', compact('post'));
+        return view('admin.post.show', compact('post'));
     }
 
     /**
@@ -93,9 +93,9 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        // $tags = Tag::all();
+        $tags = Tag::all();
         $categories = Category::all();
-        return view('admin.post.edit', compact(['post', 'categories']));
+        return view('admin.post.edit', compact(['post', 'categories', 'tags']));
     }
 
     /**
@@ -118,7 +118,7 @@ class PostController extends Controller
         $post->description = $request->description;
         $post->category_id = $request->category;
 
-        // $post->tags()->sync($request->tags);
+        $post->tags()->sync($request->tags);
 
         if($request->hasFile('image')){
             $image = $request->image;

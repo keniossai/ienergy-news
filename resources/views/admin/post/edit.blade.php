@@ -77,6 +77,21 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card-heading form-group mt-5">
+                                        <h4 class="card-title">Edit Tag</h4>
+                                        <div class=" d-flex flex-wrap">
+                                            @foreach ($tags as $tag)
+                                            <div class="custom-control custom-checkbox" style="margin-right: 20px">
+                                                <input class="custom-control-input" name="tags[]" type="checkbox" id="tag{{$tag->id}}" value="{{$tag->id}}"
+                                                    @foreach($post->tags as $t)
+                                                        @if($tag->id == $t->id) checked @endif
+                                                    @endforeach
+                                                >
+                                                <label for="tag{{$tag->id}}" class="custom-control-label">{{$tag->name}}</label>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
                                     <div class="card-heading mt-5">
                                         <h4 class="card-title">Summernote</h4>
                                         <textarea  name="description" id="description" class="form-control" value="{{ $post->description }}" rows="20">{{ $post->description }}</textarea>

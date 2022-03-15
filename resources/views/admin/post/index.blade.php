@@ -51,6 +51,7 @@
                                     <th scope="col">Image</th>
                                     <th scope="col">Title</th>
                                     <th scope="col">Category</th>
+                                    <th scope="col">Tags</th>
                                     <th scope="col">Author</th>
                                     <th scope="col">Edit & Delete</th>
                                 </tr>
@@ -69,9 +70,14 @@
                                             </td>
                                             <td>{{$post->title}}</td>
                                             <td>{{$post->category->name}}</td>
+                                            <td>
+                                                @foreach ($post->tags as $tag)
+                                                    <span class="badge badge-primary">{{$tag->name}}</span>
+                                                @endforeach
+                                            </td>
                                             <td>{{$post->user->name}}</td>
                                             <td class="d-flex">
-                                                <a href="javascript:void(0)" class="btn btn-icon btn-outline-success btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-eye"></i></a>
+                                                <a href="{{ route('post.show', [$post->id])}}" class="btn btn-icon btn-outline-success btn-round mr-2 mb-2 mb-sm-0 "><i class="ti ti-eye"></i></a>
                                                 <a href="{{ route('post.edit', [$post->id])}}" class="btn btn-icon btn-outline-info btn-round"><i class="ti ti-pencil"></i></a>
                                                 {{-- <a href="javascript:void(0)" class="btn btn-icon btn-outline-danger btn-round ml-2"><i class="ti ti-trash"></i></a> --}}
                                                 <form action="{{ route('post.destroy', [$post->id])}}" class="ml-2" method="POST">

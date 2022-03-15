@@ -68,6 +68,17 @@
                                             <label class="custom-file-label" for="image">Choose file</label>
                                         </div>
                                     </div>
+                                    <div class="card-heading form-group mt-5">
+                                        <h4 class="card-title">Select Tag</h4>
+                                        <div class=" d-flex flex-wrap">
+                                            @foreach ($tags as $tag)
+                                            <div class="custom-control custom-checkbox" style="margin-right: 20px">
+                                                <input class="custom-control-input" name="tags[]" type="checkbox" id="tag{{$tag->id}}" value="{{$tag->id}}">
+                                                <label for="tag{{$tag->id}}" class="custom-control-label">{{$tag->name}}</label>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
                                     <div class="card-heading mt-5">
                                         <h4 class="card-title">Summernote</h4>
                                         <textarea  name="description" id="description" class="form-control" value="{{old('description')}}" rows="20"></textarea>
