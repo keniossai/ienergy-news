@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class CommentsController extends Controller
 {
-    public function comments(){
+    public function index(){
 
-        return view('admin.comments.comments');
+        return view('admin.comments.index');
     }
 }

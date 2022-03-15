@@ -252,8 +252,8 @@
                                 <li>
                                     <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-pin"></i><span class="nav-title">Posts</span> </a>
                                     <ul aria-expanded="false">
-                                        <li> <a href="{{ route('posts.index')}}">All Posts</a> </li>
-                                        <li> <a href="{{ route('posts.create')}}">Add New</a> </li>
+                                        <li> <a href="{{ route('post.index')}}">All Posts</a> </li>
+                                        <li> <a href="{{ route('post.create')}}">Add New</a> </li>
                                         <li> <a href="{{ route('category.index')}}">Categories</a> </li>
                                         <li> <a href="{{ route('tag.index')}}">Tags</a> </li>
                                     </ul>
@@ -272,7 +272,7 @@
                             <li>
                                 <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Settings</span></a>
                                 <ul aria-expanded="false">
-                                    <li> <a href="settings">Account Settings</a> </li>
+                                    <li> <a href="{{route('settings.index')}}">Account Settings</a> </li>
                                     <li> <a href="users">Users</a> </li>
                                 </ul>
                             </li>
@@ -319,12 +319,16 @@
 <!-- custom app -->
 <script src="{{asset('panel/js/app.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="{{ asset('panel') }}/js/bs-custom-file-input.min.js"></script>
 <script>
     @if(Session::has('success'))
     toastr.success("{{ Session::get('success') }}");
     @endif
     $(document).ready(function () {
       bsCustomFileInput.init()
+    });
+    $(document).ready(function () {
+        bsCustomFileInput.init()
     });
   </script>
 </body>

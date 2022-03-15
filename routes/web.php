@@ -27,10 +27,10 @@ use App\Http\Controllers\CategoryController;
 
 // Auth::routes();
 
-// Route::get('/', [HomePageController::class, 'homepage'])->name('homepage');
-// Route::get('/newsdetails', [NewsDetailController::class, 'newsdetails'])->name('newsdetails');
-// Route::get('/latestnews', [LatestNewsController::class, 'latestnews'])->name('latestnews');
-// Route::get('/region', [RegionNewsController::class, 'region'])->name('region');
+Route::get('/', [HomePageController::class, 'homepage'])->name('homepage');
+Route::get('/newsdetails', [NewsDetailController::class, 'newsdetails'])->name('newsdetails');
+Route::get('/latestnews', [LatestNewsController::class, 'latestnews'])->name('latestnews');
+Route::get('/region', [RegionNewsController::class, 'region'])->name('region');
 
 
 
@@ -39,6 +39,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'verified']]
     Route::get('/dashboard', [DashBoardController::class , 'index'])->name('dashboard');
 
     Route::resource('category', CategoryController::class);
-    Route::resource('posts', PostController::class);
+    Route::resource('post', PostController::class);
     Route::resource('tag', TagController::class);
+    Route::resource('settings', SettingsController::class);
+
+    Route::get('comment', [CommentsController::class, 'index'])->name('index');
+    Route::get('calendar', [DashBoardController::class, 'calendar'])->name('index');
 });

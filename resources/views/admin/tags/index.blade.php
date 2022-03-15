@@ -59,7 +59,7 @@
                                   </tr>
                                 </thead>
                                 <tbody>
-                                 @if($tags->count() > 0)
+                                 @if($tags->count())
                                     @foreach ($tags as $tag)
                                     <tr class="align-items-center">
                                         <th scope="row align-items-center">{{$tag->id}}</th>

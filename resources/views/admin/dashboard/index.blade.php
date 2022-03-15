@@ -33,7 +33,7 @@
                         <a href="calendar" class="tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Calendar">
                             <i class="fa fa-calendar-o btn btn-icon text-cyan"></i>
                         </a>
-                        <a class="btn btn-primary" href="{{ route('posts.create')}}">
+                        <a class="btn btn-primary" href="{{ route('post.create')}}">
                             Add New
                         </a>
                     </div>
@@ -45,8 +45,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="alert border-0 alert-primary bg-gradient m-b-30 alert-dismissible fade show border-radius-none" role="alert">
-                    <strong>Holy guacamole!</strong> You should check in on some of those
-                    fields below.
+                    <strong>Hello!</strong> {{ Auth::user()->name }}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <i class="ti ti-close"></i>
                     </button>
@@ -91,117 +90,27 @@
         </div>
         <!-- end row -->
         <div class="row magnific-wrapper">
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/02.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"><a href="javascript:void(0)">Your title here</a></h4>
+            @if ($posts->count())
+                @foreach ($posts as $post)
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="card card-statistics text-center">
+                            <div class="card-body p-0">
+                                <div class="portfolio-item">
+                                    <img src="{{asset($post->image)}}" alt="gallery-img">
+                                    <div class="portfolio-overlay">
+                                        <h5 class="text-white"><a href="javascript:void(0)">{{$post->title}}</a></h5>
+                                    </div>
+                                    <a class="popup portfolio-img view" href="{{asset($post->image)}}"><i class="fa fa-edit"></i></a>
+                                </div>
                             </div>
-                            <a class="popup portfolio-img view" href="{{asset('panel/img/widget/02.jpg')}}"><i class="fa fa-edit"></i></a>
                         </div>
                     </div>
+                @endforeach
+            @else
+                <div class="col-md-12">
+                    <h5 class="text-center">You have no post</h5>
                 </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/03.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/03.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/04.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/04.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/05.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/05.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/06.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/06.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/07.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/07.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/08.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class=" view popup portfolio-img" href="{{asset('panel/img/widget/08.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="card card-statistics text-center">
-                    <div class="card-body p-0">
-                        <div class="portfolio-item">
-                            <img src="{{asset('panel/img/widget/09.jpg')}}" alt="gallery-img">
-                            <div class="portfolio-overlay">
-                                <h4 class="text-white"> <a href="javascript:void(0)"> Your title here </a> </h4>
-                            </div>
-                            <a class="popup portfolio-img view" href="{{asset('panel/img/widget/09.jpg')}}"><i class="fa fa-arrows-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endif
         </div>
         <!-- event Modal -->
         <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="verticalCenterTitle" aria-hidden="true">

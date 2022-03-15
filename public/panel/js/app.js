@@ -13060,6 +13060,8 @@ var checkin = $('.range-from').datepicker({
         }
     });
 
+  
+
 })(window, document, window.jQuery);
 (function(window, document, $, undefined){
 
@@ -13521,18 +13523,7 @@ var checkin = $('.range-from').datepicker({
 
     // Summernote Editor
 
-})(window, document, window.jQuery);
-(function(window, document, $, undefined){
 
-    $(function(){
-        var summernote = jQuery(".summernote");
-        if (summernote.length > 0) {
-                $('#summernote').summernote({
-                    tabsize: 2,
-                    height: 350
-                });
-        }
-    });
 
 })(window, document, window.jQuery);
 (function(window, document, $, undefined){
