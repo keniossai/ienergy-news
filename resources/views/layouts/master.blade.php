@@ -42,7 +42,10 @@
 
                     <!-- begin navbar-header -->
                     <div class="navbar-header d-flex align-items-center">
-                        <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
+                        <button style="background-color: transparent; overflow: visible; outline: none;" class="mobile-toggle" type="button">
+                            <i class="ti ti-align-right"></i>
+                        </button>
+                        {{-- <a href="javascript:void:(0)" data-toggle="collapse" role="button" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation" class="mobile-toggle"><i class="ti ti-align-right"></i></a> --}}
                         <a class="navbar-brand" href="index.html">
                             <img src="{{asset('panel/img/logo.png')}}" class="img-fluid logo-desktop" alt="logo" />
                             <img src="{{asset('panel/img/logo-icon.png')}}" class="img-fluid logo-mobile" alt="logo" />
@@ -237,12 +240,12 @@
                 <!-- end navbar -->
             </header>
 
-            <div class="app-container">
+            <div class="app-container expand">
                 <!-- begin app-nabar -->
                 <aside class="app-navbar">
                     <!-- begin sidebar-nav -->
                     <div class="sidebar-nav scrollbar scroll_light">
-                        <ul class="metismenu " id="sidebarNav">
+                        <ul class="metismenu" id="sidebarNav">
                             <li class="nav-static-title">iENERGY CMS</li>
                             <li class="active">
                                 <a class="has-arrow" href="{{ route('dashboard')}}" aria-expanded="false">
@@ -294,21 +297,20 @@
                     </div>
                     <!-- end sidebar-nav -->
                 </aside>
-
-
-                @yield('content')
-
             </div>
-                <footer class="footer">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-left">
-                            <p>&copy; Copyright 2022. All rights reserved.</p>
-                        </div>
-                    <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
-                            <p><a target="_blank" href="">Developed By Ken Ossai</a></p>
-                        </div>
+
+            @yield('content')
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-12 col-sm-6 text-center text-sm-left">
+                        <p>&copy; Copyright 2022. All rights reserved.</p>
                     </div>
-                </footer>
+                <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                        <p><a target="_blank" href="">Developed By Ken Ossai</a></p>
+                    </div>
+                </div>
+            </footer>
             <!-- end footer -->
         </div>  
     </div>
@@ -328,9 +330,6 @@
     @endif
     $(document).ready(function () {
       bsCustomFileInput.init()
-    });
-    $(document).ready(function () {
-        bsCustomFileInput.init()
     });
   </script>
 </body>

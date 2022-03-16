@@ -14255,8 +14255,8 @@ $(document).ready(function() {
         $('.search-wrapper').fadeOut(200);
       });
 
-      $('.mobile-toggle').on('click', function() {
-        $('body').toggleClass('sidebar-toggled');
-      });
+      // $('.mobile-toggle').on('click', function() {
+      //   $('body').toggleClass('sidebar-toggled');
+      // });
 
 })(window, document, window.jQuery);
