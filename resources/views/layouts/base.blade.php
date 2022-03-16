@@ -43,8 +43,8 @@
                     <aside class="col-md-6">
                         <span><small>Latest News</small> <i class="fa fa-caret-right"></i></span>
                         <div class="sportsmagazine-ticker-slide">
-                            <div class="sportsmagazine-ticker-slide-text"> Praesent mattis sapien nec lorem dictum  </div>
-                            <div class="sportsmagazine-ticker-slide-text"> Praesent mattis sapien nec lorem dictum </div>
+                            <div class="sportsmagazine-ticker-slide-text"> <a href="">Kinetik Starts Trading on Nasdaq</a>  </div>
+                            <div class="sportsmagazine-ticker-slide-text"> <a href="">Today is an exciting day, both for the shareholders of EagleClaw</a> </div>
                         </div>
                     </aside>
                     <aside class="col-md-6">
@@ -78,8 +78,8 @@
                                   <ul class="nav navbar-nav">
                                     <li class="active"><a href="{{route('latestnews')}}">Latest News</a></li>
                                     
-                                    <li><a href="#">Exclusive</a></li>
-                                    <li><a href="#">Region</a></li>
+                                    <li><a href="exclusive-news">Exclusive</a></li>
+                                    <li><a href="regions">Region</a></li>
                                     <!-- <li><a href="#">Field Development</a></li> -->
                                     <li class="sportsmagazine-megamenu-li"><a href="#">More</a>
                                         <ul class="sportsmagazine-megamenu">
@@ -144,7 +144,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="contact">Contact us</a></li>
                                   </ul>
                                 </div>
                             </nav>

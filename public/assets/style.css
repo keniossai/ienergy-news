@@ -333,6 +333,7 @@ address { font-style: italic; }
 .sportsmagazine-main-header {
     float: left;
     width: 100%;
+    height: 100px;
 }
 /* Logo */
 .sportsmagazine-logo {
@@ -344,8 +345,8 @@ address { font-style: italic; }
     content: '';
     position: absolute;
     right: -80px;
-    top: -13px;
-    height: 139px;
+    top: -8px;
+    height: 117px;
     width: 3px;
     background-color: #333;
     -webkit-transform: rotate(34deg);
@@ -1976,7 +1977,14 @@ ul li:last-child .sportsmagazine-blog-list-wrap {
     background: url(extra-images/sub-header.jpg);
     padding: 82px 0 132px;
     position: relative;
-    background-position: center;
+    background-position: center center;
+    text-align: center;
+}
+
+.sportsmagazinenewsdetails{
+    background: url('https://images.rigzone.com/images/news/articles/168263_582x327.webp');
+    position: relative;
+    background-position: center center;
     text-align: center;
 }
 .sportsmagazine-subheader:before {
@@ -2849,7 +2857,7 @@ ul li:last-child .sportsmagazine-blog-list-wrap {
     width: 60px;
     float: left;
     height: 70px;
-    color: #85711c;
+    color: #000;
     text-align: center;
     position: relative;
     padding: 19px 0px 0px;
@@ -7634,7 +7642,7 @@ blockquote span:before {
     position: absolute;
     left: 0px;
     top: 10px;
-    background-color: #ffdc11;
+    background-color: #00CCF7;
     width: 1px;
     height: 56px;
 }
@@ -7643,7 +7651,7 @@ blockquote span:before {
     position: absolute;
     left: -14px;
     bottom: 0px;
-    background-color: #ffdc11;
+    background-color: #00CCF7;
     width: 56px;
     height: 1px;
 }
@@ -7658,7 +7666,7 @@ blockquote span:before {
     position: absolute;
     right: 0px;
     bottom: -15px;
-    background-color: #ffdc11;
+    background-color: #00CCF7;
     width: 1px;
     height: 56px;
 }
@@ -7667,7 +7675,7 @@ blockquote span:before {
     position: absolute;
     right: -14px;
     bottom: 0px;
-    background-color: #ffdc11;
+    background-color: #00CCF7;
     width: 56px;
     height: 1px;
 }

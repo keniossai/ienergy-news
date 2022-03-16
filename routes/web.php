@@ -1,15 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomePageController;
-use App\Http\Controllers\NewsDetailController;
-use App\Http\Controllers\LatestNewsController;
+use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\SettingsController;
-use App\Http\Controllers\RegionNewsController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\CategoryController;
 // use App\Http\Controllers\AdminPostController;
@@ -27,10 +24,13 @@ use App\Http\Controllers\CategoryController;
 
 // Auth::routes();
 
-Route::get('/', [HomePageController::class, 'homepage'])->name('homepage');
-Route::get('/newsdetails', [NewsDetailController::class, 'newsdetails'])->name('newsdetails');
-Route::get('/latestnews', [LatestNewsController::class, 'latestnews'])->name('latestnews');
-Route::get('/region', [RegionNewsController::class, 'region'])->name('region');
+Route::get('/', [FrontEndController::class, 'homepage'])->name('homepage');
+Route::get('/newsdetails', [FrontEndController::class, 'newsdetails'])->name('newsdetails');
+Route::get('/latestnews', [FrontEndController::class, 'latestnews'])->name('latestnews');
+Route::get('/regions', [FrontEndController::class, 'region'])->name('region');
+Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
+Route::get('/exclusive-news', [FrontEndController::class, 'exclusive'])->name('exclusive');
+Route::get('/africa-news', [FrontEndController::class, 'africa'])->name('africa');
 
 
 
