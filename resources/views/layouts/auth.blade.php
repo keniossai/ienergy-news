@@ -6,8 +6,8 @@
     <title>iEnergy Online | Authenication</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Admin template that can be used to build dashboards for CRM, CMS, etc." />
-    <meta name="author" content="Potenza Global Solutions" />
+    <meta name="description" content="iEnergy Online | Latest oil and gas news" />
+    <meta name="author" content="Latest oil and gas news" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- app favicon -->
     <link rel="shortcut icon" href="panel/img/favicon.ico">
