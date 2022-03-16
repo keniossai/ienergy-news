@@ -34,15 +34,15 @@ Route::get('/africa-news', [FrontEndController::class, 'africa'])->name('africa'
 
 
 
-// Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'verified']], function()
-// {
-//     Route::get('/dashboard', [DashBoardController::class , 'index'])->name('dashboard');
+Route::group(['prefix' => 'admin', 'middleware' => ['auth:sanctum', 'verified']], function()
+{
+    Route::get('/dashboard', [DashBoardController::class , 'index'])->name('dashboard');
 
-//     Route::resource('category', CategoryController::class);
-//     Route::resource('post', PostController::class);
-//     Route::resource('tag', TagController::class);
-//     Route::resource('settings', SettingsController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('post', PostController::class);
+    Route::resource('tag', TagController::class);
+    Route::resource('settings', SettingsController::class);
 
-//     Route::get('comment', [CommentsController::class, 'index'])->name('index');
-//     Route::get('calendar', [DashBoardController::class, 'calendar'])->name('index');
-// });
+    Route::get('comment', [CommentsController::class, 'index'])->name('index');
+    Route::get('calendar', [DashBoardController::class, 'calendar'])->name('index');
+});
