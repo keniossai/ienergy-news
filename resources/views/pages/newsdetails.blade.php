@@ -1,322 +1,549 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="sportsmagazine-main-content sportsmagazine-main-contentminus ">
-            
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section sportsmagazine-thumb sportsmagazinenewsdetails">
-        <span class="thumb-transparent"></span>
-        <div class="sportsmagazine-thumb-text">
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <h2> Russian LNG Tankers Diverted From UK Find Home In France, Belgium </h2>
-                        <ul class="sportsmagazine-thumb-option">
-                            <li><i class="fa fa-calendar-o"></i> AUGUST 21, 2017</li>
-                            <li><a href="404.html"><i class="fa fa-thumbs-o-up"></i> 213</a></li>
-                            <li><a href="404.html"><i class="fa fa-comments-o"></i> 21</a></li>
-                            <li><i class="fa fa-user"></i> David Jordan</li>
+    <!-- Breadcrumb Area -->
+    <section class="breadcrumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-box">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                            <li class="list-inline-item">News Details</li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-    <!--// Main Section \\-->
+    </section>
+    <!-- End Breadcrumb Area -->
 
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section">
+    <!-- News Details Area -->
+    <section class="category-details">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-9">
-                    <div class="sportsmagazine-rich-editor">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <figure><img style="width: 100%;" src="https://images.rigzone.com/images/news/articles/168263_582x327.webp" alt=""></figure>
-                                <blockquote> As the attack on Ukraine continues, workforces around the world are doing their bit to boycott Russia.
-                                    <span></span>
-                                </blockquote>
-                                <p>Workers at the National Grid’s Isle of Grain LNG terminal have shown their support to Ukraine by refusing to unload LNG tankers carrying the chilled gas from the Yamal facility in the Russian Arctic - but other willing recipients of the chilled fuel have been found.
-
-                                    Since Russia’s attack on Ukraine started on February 24, European energy majors have all sought to exit their positions in Russia, and now the workforce is refusing to handle vessels exporting Russian energy products.
-                                    
-                                    Energy workers employed by the National Grid at its Isle of Grain terminal on the Medway Estuary, the UK’s leading terminal for the import of liquefied natural gas, recently refused to unload two LNG tankers arriving from Sabetta, Russia.</p>
-                                <p>Peter Read, a worker at the Isle of Grain LNG terminal, and a branch chair of UNISON, UK’s largest union, noted he was contacted by several the union members who had seen the schedules for ships due to arrive in the following days, having spotted that two were listed as carrying Russian gas.
-
-                                    “Some of them were quite passionate about it and stated that there was no way they were they were going to be doing anything to unload the ship”, Read said.
-                                    
-                                    The vessels in question were two Arctic LNG carriers that usually transport Yamal LNG to Europe either for unloading at European terminals or transshipment for further transport to other destinations, Fedor Litke and Boris Vilkitsky.</p>
-                                
-                                <p>These protests have given results since both vessels ended up being diverted from the Isle of Grain terminal. However, both vessels found other destinations in Europe, which is not something Helene Bourges, head of fossil fuel campaign for Greenpeace France, was happy with.
-
-                                    Onboard an inflatable, the group's activists displayed a banner reading ‘Fossil Fuels War’ in front of the Boris Vilkitsky preparing to unload TotalEnergies’ gas in the port of Montoir-de-Bretagne on the west coast of France.</p>
-                                <div class="sportsmagazine-post-tags">
-                                  <div class="sportsmagazine-tags">
-                                     <a href="404.html">#Playoffs</a>
-                                     <a href="404.html">#Injuries</a>
-                                     <a href="404.html">#Teams</a>
-                                     <a href="404.html">#Uniform</a>
-                                  </div>
-                                  <div class="sportsmagazine-blog-social">
-                                     <ul>
-                                        <li><a href="https://www.facebook.com/" class="color-one"><i class="fa fa-facebook"></i>facebook</a></li>
-                                        <li><a href="https://twitter.com/login" class="color-two"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                        <li><a href="https://plus.google.com/" class="color-three"><i class="fa fa-google-plus"></i>Google+</a></li>
-                                     </ul>
-                                  </div>
-                               </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="news-heading">
+                                <h4>It is usually composed of several sentences that together developed one. It is usually composed of several sentences.</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-user-o"></i><a href="#">Mike</a></li>
+                                    <li class="list-inline-item"><i class="fa fa-calendar"></i>February 11, 2019</li>
+                                    <li class="list-inline-item"><i class="fa fa-commenting-o"></i><a href="#">(09 Comments)</a></li>
+                                </ul>
+                            </div>
+                            <div class="news-content">
+                                <img src="{{asset('assets')}}/img/details-1.jpg" alt="" class="img-fluid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam esse quisquam, aperiam quos, sunt nobis molestiae unde rerum quo sequi, recusandae mollitia consequuntur, sed repudiandae sit? Officia, neque itaque
+                                    quos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolores quod error ipsa excepturi nemo maxime accusamus, illum, voluptates blanditiis consectetur animi tenetur ullam sunt nesciunt, asperiores
+                                    eveniet incidunt odio!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, adipisci quos beatae illo reiciendis illum consectetur! Magni voluptatum ipsam dolore dicta enim voluptates vitae quis
+                                    maiores, dolorum reiciendis. Voluptates, reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ducimus esse iusto temporibus suscipit dolorem fugit. Libero quia, est soluta culpa facilis
+                                    aperiam et vero rerum natus repellendus vel pariatur.</p>
+                            </div>
+                            <div class="news-comment">
+                                <i class="fa fa-quote-right"></i>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quam perspiciatis exdicta, quibusdam ut. Id unde recusandae esse dignissimos iure mollitia laborum aperiam? Sequi iusto delectus minus libero iusto
+                                    quas.</p>
+                                <span>ANDRU JAMES</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 padding-fix-r">
+                                    <div class="news-img-sm">
+                                        <img src="{{asset('assets')}}/img/details-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="news-sm-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit tempora animi esse asperiores! Quibusdam facere eaque rem doloremque, iure velit nulla quo? Harum molestias officia magnam nam eius nisi
+                                            illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium perspiciatis asperiores ullam, tempora quae doloribus, voluptas iure laborum eveniet ipsa natus aspernatur.Sit tempora animi esse
+                                            asperiores! Quibusdam facere eaque rem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-btm-txt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet necessitatibus laudantium est delectus reprehenderit hic maxime, inventore repudiandae culpa quam? Ratione earum dolorum dolorem soluta aliquam
+                                    possimus commodi numquam voluptatibus.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="social-tag d-flex justify-content-between">
+                                <div class="social">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item"><a href="">Facebook</a></li>
+                                        <li class="list-inline-item"><a href="">Twitter</a></li>
+                                        <li class="list-inline-item"><a href="">Google Plus</a></li>
+                                        <li class="list-inline-item"><a href="">Pinterest</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tag">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Tags :</li>
+                                        <li class="list-inline-item"><a href="">Lifestyle</a>,</li>
+                                        <li class="list-inline-item"><a href="">Business</a>,</li>
+                                        <li class="list-inline-item"><a href="">Sports</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="news-author d-flex">
+                                <div class="author-img">
+                                    <img src="{{asset('assets')}}/img/author.jpg" alt="">
+                                </div>
+                                <div class="author-content">
+                                    <h6>Author : <a href="">Md Tahmidur Rahman</a></h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi doloribus unde molestias laborum delectus adipisci, eos repellat in debitis cum impedit numquam, architecto, facilis.</p>
+                                    <ul class="list-unstyled list-inline f-social">
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-rss"></i></a></li>
+                                        <li class="list-inline-item"><a href=""><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="comment-sec">
+                                <div class="sec-title">
+                                    <h5>Comments <span>(03)</span></h5>
+                                </div>
+                                <div class="comment-box d-flex">
+                                    <div class="comment-img">
+                                        <a href=""><img src="{{asset('assets')}}/img/comm-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="comment-con">
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item"><a href="">John Doe</a></li>
+                                            <li class="list-inline-item"><a href="">Reply</a></li>
+                                        </ul>
+                                        <span>Feb 11, 2019 at 3:15pm</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam, non magnam molestias aspernatur. Magni suscipit sequi harum odit sunt est.</p>
+                                    </div>
+                                </div>
+                                <div class="comment-box comment-box2 d-flex">
+                                    <div class="comment-img">
+                                        <a href=""><img src="{{asset('assets')}}/img/comm-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="comment-con">
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item"><a href="">Mary Chang</a></li>
+                                            <li class="list-inline-item"><a href="">Reply</a></li>
+                                        </ul>
+                                        <span>Feb 11, 2019 at 3:15pm</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam, non magnam molestias aspernatur. Magni suscipit sequi harum odit sunt est.</p>
+                                    </div>
+                                </div>
+                                <div class="comment-box d-flex">
+                                    <div class="comment-img">
+                                        <a href=""><img src="{{asset('assets')}}/img/comm-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="comment-con">
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item"><a href="">Kate Brown</a></li>
+                                            <li class="list-inline-item"><a href="">Reply</a></li>
+                                        </ul>
+                                        <span>Feb 11, 2019 at 3:15pm</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nam, non magnam molestias aspernatur. Magni suscipit sequi harum odit sunt est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="comment-form">
+                                <div class="sec-title">
+                                    <h5>Leave Your Comment</h5>
+                                </div>
+                                <form class="com-form" action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="name" value="" placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="email" value="" placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="name" placeholder="Your Comment Here"></textarea>
+                                            <button type="button" name="button">Post Comment</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="sportsmagazine-prenxt-post">
-                        <ul>
-                            <li>
-                                <div class="sportsmagazine-prev-post">
-                                    <figure><a href="404.html"><img src="https://images.rigzone.com/images/news/articles/168258_582x327.webp" alt=""></a></figure>
-                                    <div class="sportsmagazine-prev-artical">
-                                        <h3><a href="404.html"> U.S. Senator Introduces Big Oil Windfall Profits Tax </a></h3>
-                                        <a href="404.html" class="sportsmagazine-post-arrow"><i class="fa fa-angle-double-left"></i> Previous Post</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sportsmagazine-next-post">
-                                    <figure><a href="404.html"><img src="https://images.rigzone.com/images/news/articles/168272_582x327.webp" alt=""></a></figure>
-                                    <div class="sportsmagazine-next-artical">
-                                        <h3><a href="404.html"> Cheaper Oil May Be Short Lived </a></h3>
-                                        <a href="404.html" class="sportsmagazine-post-arrow">Next Post <i class="fa fa-angle-double-right"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sportsmagazine-section-heading"><h2>Related Articles</h2></div>
-                    <div class="sportsmagazine-related-article sportsmagazine-blog-artical">
-                        <ul class="row">
-                            <li class="col-md-4">
-                                <figure><a href="blog-detail.html.html"><img src="https://images.rigzone.com/images/news/articles/168257_582x327.webp" alt=""><i class="fa fa-link"></i></a></figure>
-                                <div class="sportsmagazine-article-text">
-                                     <time datetime="2008-02-14 20:00">March 23rd, 2022</time>
-                                     <h5><a href="blog-detail.html.html"> Sound Energy Signs Pipeline Tie-In Deal For Phase 2 Tendrara Gas </a></h5>
-                                </div>
-                                <ul class="sportsmagazine-article-options">
-                                    <li><a href="404.html"><i class="fa fa-thumbs-o-up"></i> 320</a></li>
-                                    <li><a href="404.html"><i class="fa fa-eye"></i> 840</a></li>
-                                    <li><a href="404.html"><i class="fa fa-share-alt"></i> 89</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-md-4">
-                                <figure><a href="blog-detail.html.html"><img src="https://images.rigzone.com/images/news/articles/168255_582x327.webp" alt=""><i class="fa fa-link"></i></a></figure>
-                                <div class="sportsmagazine-article-text">
-                                     <time datetime="2008-02-14 20:00">March 15, 2022</time>
-                                     <h5><a href="blog-detail.html.html"> Petronas Hires Six Velesto Rigs For Work Off Malaysia </a></h5>
-                                </div>
-                                <ul class="sportsmagazine-article-options">
-                                    <li><a href="404.html"><i class="fa fa-thumbs-o-up"></i> 320</a></li>
-                                    <li><a href="404.html"><i class="fa fa-eye"></i> 840</a></li>
-                                    <li><a href="404.html"><i class="fa fa-share-alt"></i> 89</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-md-4">
-                                <figure><a href="blog-detail.html.html"><img src="https://images.rigzone.com/images/news/articles/168264_582x327.webp" alt=""><i class="fa fa-link"></i></a></figure>
-                                <div class="sportsmagazine-article-text">
-                                     <time datetime="2008-02-14 20:00">March 15, 2022</time>
-                                     <h5><a href="blog-detail.html.html"> Times Square Billboards Have Oil Message for Biden </a></h5>
-                                </div>
-                                <ul class="sportsmagazine-article-options">
-                                    <li><a href="404.html"><i class="fa fa-thumbs-o-up"></i> 320</a></li>
-                                    <li><a href="404.html"><i class="fa fa-eye"></i> 840</a></li>
-                                    <li><a href="404.html"><i class="fa fa-share-alt"></i> 89</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="comments-area">
-                      <!--// coments \\-->
-                      <div class="sportsmagazine-section-heading"><h2>Comments</h2></div>
-                      <ul class="comment-list">
-                         <li>
-                            <div class="thumb-list">
-                               <figure><img alt="" src="{{asset('assets/extra-images/comment-img1.jpg')}}"></figure>
-                               <div class="text-holder">
-                                  <h6>Albert Darren</h6>
-                                  <time class="post-date" datetime="2008-02-14 20:00">1 Hour Ago </time>
-                                  <a class="comment-reply-link" href="#">Reply</a>
-                               </div>
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac malesuada ante. Curabitur lacinia diam tempus tempor consectetur. Sed vitae dignissim purus, eget aliquam libero. Duis et arcu a erat venenatis ornare eget nec urna.</p>
-                            </div>
-                            <div class="thumb-list">
-                               <figure><img alt="" src="{{asset('assets/extra-images/comment-img2.jpg')}}"></figure>
-                               <div class="text-holder">
-                                  <h6>Albert Darren</h6>
-                                  <time class="post-date" datetime="2008-02-14 20:00">1 Hour Ago </time>
-                                  <a class="comment-reply-link" href="#">Reply</a>
-                               </div>
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac malesuada ante. Curabitur lacinia diam tempus tempor consectetur. Sed vitae dignissim purus, eget aliquam libero. Duis et arcu a erat venenatis ornare eget nec urna.</p>
-                            </div>
-                            <ul class="children">
-                               <li>
-                                  <div class="thumb-list">
-                                     <figure><img alt="" src="{{asset('assets/extra-images/comment-img3.jpg')}}"></figure>
-                                     <div class="text-holder">
-                                        <h6>Jeans Morris</h6>
-                                        <time class="post-date" datetime="2008-02-14 20:00">1 Hour Ago </time>
-                                        <a class="comment-reply-link" href="#">Reply</a>
-                                     </div>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac malesuada ante. Curabitur lacinia diam tempus tempor consetur ed vit dignissim purus, eget aliquam libero. Duis et arcu a erat venenatis ornare eget nec urna.</p>
-                                  </div>
-                               </li>
-                               <!-- #comment-## -->
-                            </ul>
-                            <!-- .children -->
-                         </li>
-                         <!-- #comment-## -->
-                         <li>
-                            <div class="thumb-list">
-                               <figure><img alt="" src="{{asset('assets/extra-images/comment-img4.jpg')}}"></figure>
-                               <div class="text-holder">
-                                  <h6>Ricky David</h6>
-                                  <time class="post-date" datetime="2008-02-14 20:00">1 Hour Ago </time>
-                                  <a class="comment-reply-link" href="#">Reply</a>
-                               </div>
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac malesuada ante. Curabitur lacinia diam tempus tempor consectetur. Sed vitae dignissim purus, eget aliquam libero. Duis et arcu a erat venenatis ornare eget nec urna.</p>
-                            </div>
-                         </li>
-                         <!-- #comment-## -->
-                      </ul>
-                      <!--// coments \\-->
-                      <!--// comment-respond \\-->
-                      <div class="comment-respond sportsmagazine-contact-form">
-                       <div class="sportsmagazine-section-heading"><h2>Write A Comment</h2></div>
-                       <form>
-                            <ul>
-                                <li>
-                                    <label>Name:</label>
-                                    <p>
-                                        <input value="Type here" onblur="if(this.value == '') { this.value ='Type here'; }" onfocus="if(this.value =='Type here') { this.value = ''; }" type="text">
-                                        <span><i class="fa fa-user"></i></span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <label>Email:</label>
-                                    <p>
-                                        <input value="Type here" onblur="if(this.value == '') { this.value ='Type here'; }" onfocus="if(this.value =='Type here') { this.value = ''; }" type="text">
-                                        <span><i class="fa fa-envelope"></i></span>
-                                    </p>
-                                </li>
-                                <li class="full-input">
-                                    <label>Comment:</label>
-                                    <p>
-                                        <textarea name="u_msg" placeholder="Type here"></textarea>
-                                        <span><i class="fa fa-comment"></i></span>
-                                    </p>
-
-                                </li>
-                                <li>
-                                    <p><label><input value="Submit" type="submit"></label></p>
-                                </li>
-                            </ul>
-                        </form>
-                      </div>
-                      <!--// comment-respond \\-->
-                   </div>
-
                 </div>
-                
-                <!--// SideBar \\-->
-                <aside class="col-md-3">
-                    
-                    <!--// Widget Popular Post \\-->
-                    <div class="sportsmagazine-widget-heading"><h2>Popular Posts</h2></div>
-                    <div class="widget widget_popular_post">
-                        <ul>
-                            <li>
-                                <div class="sportsmagazine-popular-post">
-                                    <figure><a href="blog-detail.html"><img src="{{asset('assets/extra-images/widget-popular-post1.jpg')}}" alt=""></a></figure>
-                                    <div class="sportsmagazine-popular-post-text">
-                                        <h5><a href="blog-detail.html">Mark Johnson has as acture and is gona</a></h5>
-                                        <time datetime="2008-02-14 20:00">August 23rd, 2016</time>
+                <div class="col-lg-4 col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-widget">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#recent">Recent</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#popular">Popular</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#comment">Comment</a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="recent" role="tabpanel">
+                                        <div class="rec-item d-flex">
+                                            <div class="rec-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-6.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <span>20 Seconds ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="rec-item d-flex">
+                                            <div class="rec-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-11.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <span>4 minutes ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="rec-item d-flex">
+                                            <div class="rec-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-7.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <span>47 minutes ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="rec-item d-flex">
+                                            <div class="rec-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-4.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <span>1 Hours ago</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sportsmagazine-popular-post">
-                                    <figure><a href="blog-detail.html"><img src="{{asset('assets/extra-images/widget-popular-post2.jpg')}}" alt=""></a></figure>
-                                    <div class="sportsmagazine-popular-post-text">
-                                        <h5><a href="blog-detail.html">Mark Johnson has as acture and is gona</a></h5>
-                                        <time datetime="2008-02-14 20:00">August 23rd, 2016</time>
+                                    <div class="tab-pane fade" id="popular" role="tabpanel">
+                                        <div class="pop-item d-flex">
+                                            <div class="pop-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pop-item d-flex">
+                                            <div class="pop-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-8.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pop-item d-flex">
+                                            <div class="pop-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-9.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pop-item d-flex">
+                                            <div class="pop-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-12.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="sportsmagazine-popular-post">
-                                    <figure><a href="blog-detail.html"><img src="{{asset('assets/extra-images/widget-popular-post3.jpg')}}" alt=""></a></figure>
-                                    <div class="sportsmagazine-popular-post-text">
-                                        <h5><a href="blog-detail.html">Mark Johnson has as acture and is gona</a></h5>
-                                        <time datetime="2008-02-14 20:00">August 23rd, 2016</time>
+                                    <div class="tab-pane fade" id="comment" role="tabpanel">
+                                        <div class="com-item d-flex">
+                                            <div class="com-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/com-1.png" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href=""><span>James</span>: Nesciunt quaerat ipsam fugiat impedit dignissimos unde...</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="com-item d-flex">
+                                            <div class="com-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/com-2.png" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href=""><span>Mary</span>: Nesciunt quaerat ipsam fugiat impedit dignissimos unde...</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="com-item d-flex">
+                                            <div class="com-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/com-1.png" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href=""><span>John</span>: Nesciunt quaerat ipsam fugiat impedit dignissimos unde...</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="com-item d-flex">
+                                            <div class="com-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/com-2.png" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href=""><span>Anna</span>: Nesciunt quaerat ipsam fugiat impedit dignissimos unde...</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="com-item d-flex">
+                                            <div class="com-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/com-1.png" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href=""><span>Maxx</span>: Nesciunt quaerat ipsam fugiat impedit dignissimos unde...</a></p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span></span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="sportsmagazine-popular-post">
-                                    <figure><a href="blog-detail.html"><img src="{{asset('assets/extra-images/widget-popular-post4.jpg')}}" alt=""></a></figure>
-                                    <div class="sportsmagazine-popular-post-text">
-                                        <h5><a href="blog-detail.html">Mark Johnson has as acture and is gona</a></h5>
-                                        <time datetime="2008-02-14 20:00">August 23rd, 2016</time>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="add-widget">
+                                <img src="{{asset('assets')}}/img/add1.jpg" alt="" class="img-fluid">
+                                <div class="add-layer text-center">
+                                    <p>Best Template For Your Online News</p>
+                                    <a href="">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mv-widget">
+                                <div class="sec-title">
+                                    <h5>Most Viewed</h5>
+                                </div>
+                                <div class="mv-slider owl-carousel">
+                                    <div class="mv-item">
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-8.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-9.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-12.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span></span>
+                                    <div class="mv-item">
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-6.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-11.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-7.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mv-box d-flex">
+                                            <div class="mv-img">
+                                                <a href=""><img src="{{asset('assets')}}/img/lt-sm-4.jpg" alt=""></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <p><a href="">These sentences are selected from various online news.</a></p>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-0">
+                            <div class="app-widget">
+                                <img src="{{asset('assets')}}/img/news-app.jpg" alt="" class="img-fluid app-img">
+                                <div class="img-content">
+                                    <h4>Stay Connected</h4>
+                                    <p>Download our app and get latest news and updates. Watch live news anytime.</p>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><img src="{{asset('assets')}}/img/app1.png" alt=""></a></li>
+                                        <li><a href="#"><img src="{{asset('assets')}}/img/app2.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!--// Widget Popular Post \\-->
-
-                    <!--// Widget Cetagories \\-->
-                    <div class="sportsmagazine-widget-heading"><h2>Cetagories</h2></div>
-                    <div class="widget widget_cetagories">
-                        <ul>
-                            <li><a href="404.html">Championship <span>( 13 )</span></a></li>
-                            <li><a href="404.html">Super Ball <span>( 12 )</span></a></li>
-                            <li><a href="404.html">Football <span>( 04 )</span></a></li>
-                            <li><a href="404.html">Boxing <span>( 08 )</span></a></li>
-                            <li><a href="404.html">BasketBall <span>( 13 )</span></a></li>
-                        </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="relate-news">
+                        <div class="sec-title">
+                            <h5>Related News</h5>
+                        </div>
+                        <div class="relate-slider owl-carousel">
+                            <div class="rel-item">
+                                <img src="{{asset('assets')}}/img/ls-1.jpg" alt="">
+                                <div class="rel-layer">
+                                    <p><a href="">It is usually composed of several sentences that together develop one.</a></p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">TECHNOLOGY</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rel-item">
+                                <img src="{{asset('assets')}}/img/ls-2.jpg" alt="">
+                                <div class="rel-layer">
+                                    <p><a href="">It is usually composed of several sentences that together develop one.</a></p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">TECHNOLOGY</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rel-item">
+                                <img src="{{asset('assets')}}/img/lt-bg-3.jpg" alt="">
+                                <div class="rel-layer">
+                                    <p><a href="">It is usually composed of several sentences that together develop one.</a></p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">TECHNOLOGY</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rel-item">
+                                <img src="{{asset('assets')}}/img/int-1.jpg" alt="">
+                                <div class="rel-layer">
+                                    <p><a href="">It is usually composed of several sentences that together develop one.</a></p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">TECHNOLOGY</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!--// Widget Cetagories \\-->
-
-
-                    <!--// Widget Flicker Images \\-->
-                    <div class="sportsmagazine-widget-heading"><h2>Flicker Images</h2></div>
-                    <div class="widget widget_gallery">
-                        <ul>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-1.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-1.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-2.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-2.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-3.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-3.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-4.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-4.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-5.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-5.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-6.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-6.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-7.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-7.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-8.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-8.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                            <li><a data-fancybox-group="group" href="{{asset('assets/extra-images/flicker-image-9.jpg')}}" class="fancybox"><img src="{{asset('assets/extra-images/flicker-image-9.jpg')}}" alt=""><i class="fa fa-angle-double-right"></i></a></li>
-                        </ul>
-                    </div>
-                    <!--// Widget Flicker Images \\-->
-
-                </aside>
-                <!--// SideBar \\-->
-
-
+                </div>
             </div>
         </div>
-    </div>
-    <!--// Main Section \\-->
-
-</div>
+    </section>
+    <!-- End News Details Area -->
 @endsection

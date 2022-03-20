@@ -1,90 +1,234 @@
 @extends('layouts.base')
 
+<style>
+    h4:hover{
+        text-decoration: underline;
+    }
+    h3:hover{
+        text-decoration: underline;
+    }
+</style>
 
 @section('content')
-<div class="sportsmagazine-subheader">
-    <span class="subheader-transparent"></span>
+<!-- Exclusive Page Start -->
+<div class="clear-fix" style="margin-top: 60px;"></div>
+<section class="int-lif">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Exclusive News</h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// SubHeader \\-->
-
-<!--// Main Content \\-->
-<div class="sportsmagazine-main-content">
-
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section sportsmagazine-bloglarge-full">
-        <div class="container">
-            <div class="row">
-                
-                <!--// SideBar \\-->
-                <aside class="col-md-4">
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
                     
-                    <!--// Widget Popular Post \\-->
-                    <div class="sportsmagazine-widget-heading"><h2>Popular Posts</h2></div>
-                    <div class="widget widget_popular_post">
-                        <ul>
-                            <li class="col-md-4">
-                                <a href="blog-detail.html"><figure><img src="https://images-global.nhst.tech/image/elBkSGFRclJFdDR5MDQrR2VzbjJVZGpHZGJrd0RsSzFTMFgwd0VkeUo0dz0=/nhst/binary/259616d5bf3440000b4fd63613f0a505?image_version=360" alt=""></figure></a>
-                                <div class="sportsmagazine-blogmodren-text">
-                                    <ul class="sportsmagazine-blogmodren-option">
-                                        <li><a href="404.html"><i class="fa fa-thumbs-o-up"></i> 32</a></li>
-                                        <li><a href="404.html"><i class="fa fa-eye"></i> 84</a></li>
-                                        <li><a href="404.html"><i class="fa fa-share-alt"></i> 89</a></li>
-                                    </ul>
-                                    <time datetime="2008-02-14 20:00"> March 16, 2022</time>
-                                    <h4><a href="blog-detail.html">Michael Bryan as was chosen as best</a></h4>
-                                    <p>Wednesday said it would work with PTTEP to ensure that the existing socio-economic development  </p>
+                    <div class="col-md-12">
+                        <div class="more-news">
+                            <div class="sec-title">
+                                <h5>Exclusive</h5>
+                            </div>
+                            <div class="more-slider owl-carousel">
+                                <div class="more-item">
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Life Style</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Sports</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Health</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Fashion</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-                <!--// SideBar \\-->
-
-                <div class="col-md-8">
-                    <div class="sportsmagazine-blog sportsmagazine-bloglarge">
-                        <ul class="row">
-                            <li class="col-md-12">
-                                <figure><a href="blog-detail.html"><img src="https://images-global.nhst.tech/image/RXl3aEJJekMyRzVFZDNCaXp4cGNNcGFNUnpzdHhBZ3V0ZmhJVXhrOU5Oaz0=/nhst/binary/33b8a5478b3692b32b0979c04ceb9dc1?image_version=640" alt=""><i class="fa fa-link"></i></a></figure>
-                                <div class="sportsmagazine-bloglarge-text">
-                                    <time datetime="2008-02-14 20:00">March 16, 2022</time>
-                                    <h3><a href="blog-detail.html"> TotalEnergies not turning its back on Myanmar </a></h3>
-                                    <p>French energy giant remains committed to CSR programme <br> French supermajor TotalEnergies said it will not turn its back on the people of Myanmar simply because it is pulling the plug on its upstream investments in the Southeast Asian nation.</p>
-                                    <a href="blog-detail.html" class="sportsmagazine-readmore-btn">READ MORE <i class="fa fa-arrow-circle-o-right"></i></a>
-                                    <ul class="sportsmagazine-article-options">
-                                        <li><a href="#404.html"><i class="fa fa-thumbs-o-up"></i> 32</a></li>
-                                        <li><a href="#404.html"><i class="fa fa-eye"></i> 40</a></li>
-                                        <li><a href="#404.html"><i class="fa fa-user"></i> Julia Martyn</a></li>
-                                    </ul>
+                                <div class="more-item">
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-5.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Life Style</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-6.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Health</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-7.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Sports</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-content d-flex">
+                                        <div class="more-img">
+                                            <a href="#"><img src="{{asset('assets')}}/img/more-8.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                            <ul class="list-unstyled list-inline">
+                                                <li class="list-inline-item">Technology</li>
+                                                <li class="list-inline-item">February 11, 2019</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!--// Pagination \\-->
-                    <div class="sportsmagazine-pagination">
-                      <ul class="page-numbers">
-                         <li><a class="previous page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-left"></i></span></a></li>
-                         <li><span class="page-numbers current">1</span></li>
-                         <li><a class="page-numbers" href="404.html">2</a></li>
-                         <li><a class="page-numbers" href="404.html">3</a></li>
-                         <li><a class="page-numbers" href="404.html">4</a></li>
-                         <li><a class="next page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-right"></i></span></a></li>
-                      </ul>
-                    </div>
-                    <!--// Pagination \\-->
                 </div>
-
-
+            </div>
+            <div class="col-lg-4 col-md-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="add-widget">
+                            <img src="{{asset('assets')}}/img/add1.jpg" alt="" class="img-fluid">
+                            <div class="add-layer text-center">
+                                <p>Udacity get the best learning experience</p>
+                                <a href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mv-widget">
+                            <div class="sec-title">
+                                <h5>Most Viewed</h5>
+                            </div>
+                            <div class="mv-slider owl-carousel">
+                                <div class="mv-item">
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-8.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-9.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-12.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mv-item">
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-6.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-11.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-7.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="mv-box d-flex">
+                                        <div class="mv-img">
+                                            <a href=""><img src="{{asset('assets')}}/img/lt-sm-4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="img-content">
+                                            <h4><a href="">These sentences are selected from various online news.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--// Main Section \\-->
-
-</div>
+</section>
+<!-- End Exclusive Page -->
 @endsection

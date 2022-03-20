@@ -1,177 +1,160 @@
 @extends('layouts.base')
 
+<style>
+    h3:hover{
+        text-decoration: underline;
+    }
+</style>
 
 @section('content')
-<div class="sportsmagazine-subheader">
-    <span class="subheader-transparent"></span>
+<section class="more-news-area">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Latest News</h1>
-            </div>
-        </div>
-    </div>
-</div>
-<!--// SubHeader \\-->
-
-<!--// Main Content \\-->
-<div class="sportsmagazine-main-content">
-
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section sportsmagazine-blogmodren-full">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-12">
-                    <div class="sportsmagazine-blog sportsmagazine-blog-grid">
-                        <ul class="row">
-                            <li class="col-md-4">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-1.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>Featured</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">The new eco friendly stadium won a Leafy Award in 2016</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-md-4 sportsmagazine-the-league">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-2.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>Sport</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">Michael Bryan was chosen as best player with 45 points</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-md-4 sportsmagazine-the-team">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-3.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>The Team</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">The vicotory againts The Shark brings us close to the Final</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-md-4 sportsmagazine-the-team">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-3.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>The Team</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">The vicotory againts The Shark brings us close to the Final</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-md-4">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-1.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>Featured</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">The new eco friendly stadium won a Leafy Award in 2016</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="col-md-4 sportsmagazine-the-league">
-                                <figure>
-                                    <a href="{{route('newsdetails')}}"><img src="{{asset('assets/extra-images/latest-blog-2.jpg')}}" alt=""></a>
-                                    <figcaption>
-                                        <span><small>The League</small></span>
-                                        <a href="{{route('newsdetails')}}" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
-                                    </figcaption>
-                                </figure>
-                                <section>
-                                    <h2><a href="{{route('newsdetails')}}">Michael Bryan was chosen as best player with 45 points</a></h2>
-                                    <p>Lorem ipsum dolor sit amet, consecttur adipis elit. Vestibulum a nunc dui. Curabitr dignissi luctus nisi id euismod. feugiat eros. Pellentesque tempus tortor.</p>
-                                </section>
-                                <div class="sportsmagazine-blog-grid-options">
-                                    <a href="{{route('newsdetails')}}" class="sportsmagazine-blog-grid-thumb"><img src="{{asset('assets/extra-images/blog-thumb-1.jpg')}}" alt=""> Julia Martyn</a>
-                                    <ul>
-                                        <li><i class="fa fa-thumbs-o-up"></i> <a href="404.html">320</a></li>
-                                        <li><i class="fa fa-eye"></i> <a href="404.html">840</a></li>
-                                        <li><i class="fa fa-share-alt"></i> <a href="404.html">89</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="col-md-12 mt-5">
+                <div class="more-news">
+                    <div class="sec-title">
+                        <h5>Energy Transition</h5>
                     </div>
-                    <!--// Pagination \\-->
-                    <div class="sportsmagazine-pagination">
-                      <ul class="page-numbers">
-                         <li><a class="previous page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-left"></i></span></a></li>
-                         <li><span class="page-numbers current">1</span></li>
-                         <li><a class="page-numbers" href="404.html">2</a></li>
-                         <li><a class="page-numbers" href="404.html">3</a></li>
-                         <li><a class="page-numbers" href="404.html">4</a></li>
-                         <li><a class="next page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-right"></i></span></a></li>
-                      </ul>
+                    <div class="more-slider owl-carousel">
+                        <div class="more-item">
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-1.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Life Style</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-2.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Sports</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-3.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Health</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-4.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Fashion</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-7.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Sports</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more-item">
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-5.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Life Style</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-6.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Health</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-7.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Sports</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-8.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Technology</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                            <div class="more-content d-flex">
+                                <div class="more-img">
+                                    <a href="#"><img src="{{asset('assets')}}/img/more-3.jpg" alt=""></a>
+                                </div>
+                                <div class="img-content">
+                                    <h3><a href="">These sentences are selected from various online news.</a></h3>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">Health</li>
+                                        <li class="list-inline-item">February 11, 2019</li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!--// Pagination \\-->
                 </div>
-
-
             </div>
+            
         </div>
     </div>
-    <!--// Main Section \\-->
-
-</div>
+</section>
 @endsection

@@ -38,4 +38,16 @@ class FrontEndController extends Controller
 
         return view('pages.africa');
     }
+    public function development(){
+
+        return view('pages.development');
+    }
+    public function faq(){
+
+        return view('pages.faq');
+    }
+    public function energyfinance(){
+
+        return view('pages.energyfinance');
+    }
 }

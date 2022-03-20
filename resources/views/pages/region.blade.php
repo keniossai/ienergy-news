@@ -2,51 +2,51 @@
 
 
 @section('content')
-<div class="sportsmagazine-main-section" style="height: 900px;">
+<!-- Breadcrumb Area -->
+<section class="breadcrumb-area">
     <div class="container">
         <div class="row">
-
-            <!--// Content \\-->
-            <div class="col-lg-12" style="margin-top: 150px;">
-                
-                
-
-                <!--// Fancy Title \\--> <div class="sportsmagazine-fancy-title"><h2>Regions</h2></div> <!--// Fancy Title \\-->
-                <div class="sportsmagazine-gallery sportsmagazine-fixture-gallery">
-                    <ul>
-                        <li>
-                            <figure>
-                                <a data-fancybox-group="group" href="africa-news" class="fancybox"><img src="https://assets.spe.org/cf/6c/8ef83e3af94ade8239a15d2b3761/ogf-lng-hero-qatar-north-field.jpg" alt=""></a>
-                                <figcaption>
-                                    <h6><a href="africa-news">North Africa</a></h6>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a data-fancybox-group="group" href="africa-news" class="fancybox"><img src="https://em-views.com/wp-content/uploads/2017/02/GABON-WEST-AFRICA-OIL-RIG-1.jpg" alt=""></a>
-                                <figcaption>
-                                    <h6><a href="africa-news">West Africa</a></h6>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a data-fancybox-group="group" href="africa-news" class="fancybox"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-jfUVrjnCjL8t9J0-cR6k7sMEfe8hkGnW9ZPNVwUlt398C_Fx5UE5zmnGXli6HfDAseI&usqp=CAU" alt=""></a>
-                                <figcaption>
-                                    <h6><a href="africa-news">Middle East</a></h6>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        
+            <div class="col-md-12">
+                <div class="breadcrumb-box">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                        <li class="list-inline-item">About us</li>
                     </ul>
                 </div>
-
             </div>
-            <!--// Content \\-->
+        </div>
+    </div>
+</section>
+<!-- End Breadcrumb Area -->
 
+<!-- About Area -->
+<section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sec-top text-center">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore excepturi exercitationem ipsam culpa est. Tempore nisi eligendi explicabo facere at ut corporis.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-box">
+                    <h4>Welcome to <span>NewsEra</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quod facere praesentium odit. Repellat porro et laudantium, atque similique distinctio.<br>Nemo quidem obcaecati aut possimus, voluptatibus
+                        dignissimos facilis sit. Qui.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsum, ut! Numquam nesciunt, ex obcaecati libero asperiores reprehenderit ratione minus commodi magni fugit non nemo quas dolorum
+                        nisi ducimus laboriosam! voluptatibus voluptatibus dignissimos facilis sit. Facilis sit.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-img">
+                    <img src="{{asset('assets')}}/img/about.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            
             
         </div>
     </div>
-</div>
+</section>
+<!-- End About Area -->
 @endsection

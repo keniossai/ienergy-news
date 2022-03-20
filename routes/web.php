@@ -26,11 +26,14 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [FrontEndController::class, 'homepage'])->name('homepage');
 Route::get('/newsdetails', [FrontEndController::class, 'newsdetails'])->name('newsdetails');
-Route::get('/latestnews', [FrontEndController::class, 'latestnews'])->name('latestnews');
-Route::get('/regions', [FrontEndController::class, 'region'])->name('region');
+Route::get('/latest-news', [FrontEndController::class, 'latestnews'])->name('latestnews');
+Route::get('/about', [FrontEndController::class, 'region'])->name('region');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
 Route::get('/exclusive-news', [FrontEndController::class, 'exclusive'])->name('exclusive');
 Route::get('/africa-news', [FrontEndController::class, 'africa'])->name('africa');
+Route::get('/energy-transition', [FrontEndController::class, 'development'])->name('development');
+Route::get('/frequent-ask-question', [FrontEndController::class, 'faq'])->name('faq');
+Route::get('/energy-finance', [FrontEndController::class, 'energyfinance'])->name('energyfinance');
 
 
 

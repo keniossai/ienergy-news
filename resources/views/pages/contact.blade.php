@@ -3,137 +3,107 @@
 
 
 @section('content')
-<div class="sportsmagazine-subheader">
-    <span class="subheader-transparent"></span>
+<!-- Breadcrumb Area -->
+<section class="breadcrumb-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Contact Us</h1>
+                <div class="breadcrumb-box">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                        <li class="list-inline-item">Contact</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!--// SubHeader \\-->
+</section>
+<!-- End Breadcrumb Area -->
 
-<!--// Main Content \\-->
-<div class="sportsmagazine-main-content">
-
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section sportsmagazine-contactus-full">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-12">
-                    {{-- <div class="sportsmagazine-fancy-title-two"><h2>Location Map <span></span></h2></div>
-                    <div class="sportsmagazine-contact-map"><div id="map"></div></div> --}}
-                    <div class="sportsmagazine-fancy-title-two"><h2>Contact Us At <span></span></h2></div>
-                    <div class="sportsmagazine-contactus-info">
-                        <ul class="row">
-                            <li class="col-md-3">
-                                <i class="fa fa-phone"></i>
-                                <div class="sportsmagazine-contact-text">
-                                    <p> (+92) 123 45 678</p>
-                                    <p> 987 65 432</p>
-                                </div>
-                            </li>
-                            <li class="col-md-3">
-                                <i class="fa fa-map-marker"></i>
-                                <div class="sportsmagazine-contact-text">
-                                    <p>9907 Salford road, east London</p>
-                                </div>
-                            </li>
-                            <li class="col-md-3">
-                                <i class="fa fa-envelope"></i>
-                                <div class="sportsmagazine-contact-text">
-                                    <a href="mailto:name@email.com">info@sports.com</a>
-                                    <a href="mailto:name@email.com">abc@mail.com</a>
-                                </div>
-                            </li>
-                            <li class="col-md-3">
-                                <i class="fa fa-fax"></i>
-                                <div class="sportsmagazine-contact-text">
-                                    <p> (+92) 123 45 678</p>
-                                    <p> 987 65 432</p>
-                                </div>
-                            </li>
-                        </ul>
+<!-- Contact Area -->
+<section class="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="get-in-touch">
+                    <div class="sec-title">
+                        <h5>Get In Touch</h5>
                     </div>
-                </div>
-                <div class="col-md-12"><div class="sportsmagazine-fancy-title-two"><h2>Contact Form <span></span></h2></div></div>
-                <div class="col-md-9">
-                    <div class="sportsmagazine-contact-form">
-                       <form>
-                            <ul>
-                                <li>
-                                    <label>Name:</label>
-                                    <p>
-                                        <input value="Type here" onblur="if(this.value == '') { this.value ='Type here'; }" onfocus="if(this.value =='Type here') { this.value = ''; }" type="text">
-                                        <span><i class="fa fa-user"></i></span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <label>Email:</label>
-                                    <p>
-                                        <input value="Type here" onblur="if(this.value == '') { this.value ='Type here'; }" onfocus="if(this.value =='Type here') { this.value = ''; }" type="text">
-                                        <span><i class="fa fa-envelope"></i></span>
-                                    </p>
-                                </li>
-                                <li class="full-input">
-                                    <label>Message:</label>
-                                    <p>
-                                        <textarea name="u_msg" placeholder="Type here"></textarea>
-                                        <span><i class="fa fa-comment"></i></span>
-                                    </p>
-
-                                </li>
-                                <li>
-                                    <p><label><input value="Submit" type="submit"></label></p>
-                                </li>
-                            </ul>
+                    <div class="contact-form">
+                        <form id="ajax-contact" method="post" action="send.php">
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <p><input type="text" id="name" name="name" placeholder="Name"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><input type="text" id="email" name="email" placeholder="Email"></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><textarea name="message" id="message" placeholder="Message"></textarea></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit">Submit Message</button>
+                                </div>
+                            </div>
+                            <div id="form-messages"></div>
                         </form>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <ul class="sportsmagazine-contact-us-text">
-                        <li>
-                            <h4>Send Us Message !!!</h4>
-                            <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Ut ac malesuada antes urabitur lacinia</p>
-                        </li>
-                        <li>
-                            <h4>Open Practices</h4>
-                            <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Ut ac malesuada antes urabitur lacinia</p>
-                            <time datetime="2008-02-14 20:00">Timings: <span>9:00am to 12:00pm</span></time>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
-        </div>
-    </div>
-    <!--// Main Section \\-->
-
-    <!--// Main Section \\-->
-    <div class="sportsmagazine-main-section">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-12">
-                    <!--// Partner \\-->
-                    <div class="sportsmagazine-fancy-title-two"><h2>Our Partners <span></span></h2></div>
-                    <div class="sportsmagazine-partner-slider">
-                        <div> <a href="404.html"><img src="{{asset('assets/extra-images/partner-logo-2.jpg')}}" alt=""></a> </div>
-                        <div> <a href="404.html"><img src="{{asset('assets/extra-images/partner-logo-3.jpg')}}" alt=""></a> </div>
-                        <div> <a href="404.html"><img src="{{asset('assets/extra-images/partner-logo-1.jpg')}}" alt=""></a> </div>
-                        <div> <a href="404.html"><img src="{{asset('assets/extra-images/partner-logo-1.jpg')}}" alt=""></a> </div>
-                        <div> <a href="404.html"><img src="{{asset('assets/extra-images/partner-logo-3.jpg')}}" alt=""></a> </div>
+            <div class="col-md-5">
+                <div class="contact-info">
+                    <div class="sec-title">
+                        <h5>Contact Info</h5>
                     </div>
-                    <!--// Partner \\-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-box d-flex">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <p>795 South Park Avenue, Long Island, Newyork, NY 94107.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="contact-box d-flex">
+                                <div class="contact-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <p>enquery@domain.com <br>help@yourdomain.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="contact-box d-flex">
+                                <div class="contact-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <p>+1 908 875 7678 <br>+1 908 875 7637</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="social">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-rss"></i></a></li>
+                                    <li class="list-inline-item"><a href=""><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!--// Main Section \\-->
-
-</div>
+    <div id="map"></div>
+</section>
+<!-- End Contact Area -->
 @endsection
