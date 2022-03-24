@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{asset('assets')}}/css/assets/normalize.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/assets/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets/css/assets/owl.carousel.1283818200c7b7a7a8e0.css')}}">
 
 </head>
 
@@ -56,16 +57,11 @@
                 <div class="col-md-9">
                     <div class="bar-left">
                         <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item"> <i class="fa fa-calendar" aria-hidden="true"></i> March 20, 2022</li>
-                            <li class="list-inline-item"><i class="fa fa-cloud"></i>🇳🇬 Nigeria, 19°C</li>
-                            <li class="list-inline-item"><a href="">Advertise</a></li>
-                            <li class="list-inline-item"><a href="">Write Us</a></li>
-                            <li class="list-inline-item"><a href="about">About</a></li>
-                            <li class="list-inline-item"><a href="contact">Contact</a></li>
+                            <li class="list-inline-item"><a href="">iEnergy Africa the Company & Its Product</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <div class="bar-social text-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -75,25 +71,25 @@
                             <li class="list-inline-item"><a href=""><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
     <!-- End Top Bar -->
-
+    
     <!-- Logo Area -->
     <section class="logo-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="logo">
-                        <a href="/"><img src="{{asset('assets')}}/img/logo.png" alt="" class="img-fluid"></a>
+                        <a href="/"><img style="margin-left: 300px; width: 400px;" src="{{asset('assets')}}/img/logo.png" alt="" class="img-fluid"></a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="searchbar text-right">
                         <form action="#">
-                            <input placeholder="Search Here..." type="text" required>
+                            <input placeholder="Search..." type="text" required>
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
@@ -102,6 +98,115 @@
         </div>
     </section>
     <!-- End Logo Area -->
+
+    
+      
+
+
+    {{-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="norkon-ticker ff-flama fs-md" style=""><div class="wrapper"><div class="py-3 ticker-carousel owl-carousel owl-loaded owl-drag"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1272px, 0px, 0px); transition: 0s; width: 3816px;"><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    Brent spot<br> <span class="col-blue">
+                      $107.80
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.04%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    Brent futures (1 mo)<br> <span class="col-blue">
+                      $108.20
+                    </span> <span class="fw-medium positive">
+                      ▴ +1.46%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    WTI spot<br> <span class="col-blue">
+                      $105.35
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.52%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    WTI futures (1 mo)<br> <span class="col-blue">
+                      $105.30
+                    </span> <span class="fw-medium positive">
+                      ▴ +2.25%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    UK Nat Gas (1 mo)<br> <span class="col-blue">
+                      240.00p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.92%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    UK Nat Gas (2 mo)<br> <span class="col-blue">
+                      243.74p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.18%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    Brent spot<br> <span class="col-blue">
+                      $107.80
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.04%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    Brent futures (1 mo)<br> <span class="col-blue">
+                      $108.20
+                    </span> <span class="fw-medium positive">
+                      ▴ +1.46%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    WTI spot<br> <span class="col-blue">
+                      $105.35
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.52%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    WTI futures (1 mo)<br> <span class="col-blue">
+                      $105.30
+                    </span> <span class="fw-medium positive">
+                      ▴ +2.25%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    UK Nat Gas (1 mo)<br> <span class="col-blue">
+                      240.00p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.92%
+                    </span></div></div></div><div class="owl-item active" style="width: 212px;"><div><div>
+                    UK Nat Gas (2 mo)<br> <span class="col-blue">
+                      243.74p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.18%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    Brent spot<br> <span class="col-blue">
+                      $107.80
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.04%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    Brent futures (1 mo)<br> <span class="col-blue">
+                      $108.20
+                    </span> <span class="fw-medium positive">
+                      ▴ +1.46%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    WTI spot<br> <span class="col-blue">
+                      $105.35
+                    </span> <span class="fw-medium positive">
+                      ▴ +10.52%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    WTI futures (1 mo)<br> <span class="col-blue">
+                      $105.30
+                    </span> <span class="fw-medium positive">
+                      ▴ +2.25%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    UK Nat Gas (1 mo)<br> <span class="col-blue">
+                      240.00p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.92%
+                    </span></div></div></div><div class="owl-item cloned" style="width: 212px;"><div><div>
+                    UK Nat Gas (2 mo)<br> <span class="col-blue">
+                      243.74p
+                    </span> <span class="fw-medium negative">
+                      ▾ -3.18%
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div></div></div>
+            </div>
+        </div>
+    </div> --}}
+
 
     <!-- Menu Area -->
     <section class="menu-area">
@@ -112,7 +217,8 @@
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item"><a href="latest-news">Latest News</a></li>
                             <li class="list-inline-item"><a href="exclusive-news">Exclusive</a></li>
-                            <li class="list-inline-item mega-vd"><a href="">Region</a></li>
+                            <li class="list-inline-item"><a href="exclusive-news">Analysis</a></li>
+                            <li class="list-inline-item mega-vd"><a href="">Regions</a></li>
                             <li class="list-inline-item"><a href="">E&P</a></li>
                             <li class="list-inline-item"><a href="">Gas</a></li>
                             <li class="list-inline-item"><a href="energy-transition">Energy Transition</a></li>
@@ -124,7 +230,7 @@
                                         <div class="col-xl-2">
                                             <div class="mega-cat">
                                                 <div class="sec-title">
-                                                    <h4>SECTOR</h4>
+                                                    <h5>SECTOR</h5>
                                                 </div>
                                                 <div class="cat-content">
                                                     <ul class="list-unstyled">
@@ -143,7 +249,7 @@
                                         <div class="col-xl-2">
                                             <div class="mega-cat">
                                                 <div class="sec-title">
-                                                    <h4>REGION</h4>
+                                                    <h5>REGION</h5>
                                                 </div>
                                                 <div class="cat-content">
                                                     <ul class="list-unstyled">
@@ -159,7 +265,7 @@
                                         <div class="col-xl-2">
                                             <div class="mega-cat">
                                                 <div class="sec-title">
-                                                    <h4>DEPARTMENTS</h4>
+                                                    <h5>DEPARTMENTS</h5>
                                                 </div>
                                                 <div class="cat-content">
                                                     <ul class="list-unstyled">
@@ -176,7 +282,7 @@
                                         <div class="col-xl-2">
                                             <div class="mega-cat">
                                                 <div class="sec-title">
-                                                    <h4>DIGITAL</h4>
+                                                    <h5>DIGITAL</h5>
                                                 </div>
                                                 <div class="cat-content">
                                                     <ul class="list-unstyled">
@@ -194,7 +300,7 @@
                                         <div class="col-xl-2">
                                             <div class="mega-cat">
                                                 <div class="sec-title">
-                                                    <h4 class="energy">iEnergy Africa</h4>
+                                                    <h5 class="energy">iEnergy Africa</h5>
                                                 </div>
                                                 <div class="cat-content">
                                                     <ul class="list-unstyled">
@@ -246,7 +352,7 @@
                                             <div class="col-xl-2">
                                                 <div class="mega-cat">
                                                     <div class="sec-title">
-                                                        <h4>SECTOR</h4>
+                                                        <h5>SECTOR</h5>
                                                     </div>
                                                     <div class="cat-content">
                                                         <ul class="list-unstyled">
@@ -265,7 +371,7 @@
                                             <div class="col-xl-2">
                                                 <div class="mega-cat">
                                                     <div class="sec-title">
-                                                        <h4>REGION</h4>
+                                                        <h5>REGION</h5>
                                                     </div>
                                                     <div class="cat-content">
                                                         <ul class="list-unstyled">
@@ -281,7 +387,7 @@
                                             <div class="col-xl-2">
                                                 <div class="mega-cat">
                                                     <div class="sec-title">
-                                                        <h4>DEPARTMENTS</h4>
+                                                        <h5>DEPARTMENTS</h5>
                                                     </div>
                                                     <div class="cat-content">
                                                         <ul class="list-unstyled">
@@ -298,7 +404,7 @@
                                             <div class="col-xl-2">
                                                 <div class="mega-cat">
                                                     <div class="sec-title">
-                                                        <h4>DIGITAL</h4>
+                                                        <h5>DIGITAL</h5>
                                                     </div>
                                                     <div class="cat-content">
                                                         <ul class="list-unstyled">
@@ -316,7 +422,7 @@
                                             <div class="col-xl-2">
                                                 <div class="mega-cat">
                                                     <div class="sec-title">
-                                                        <h4 class="energy">iEnergy Africa</h4>
+                                                        <h5 class="energy">iEnergy Africa</h5>
                                                     </div>
                                                     <div class="cat-content">
                                                         <ul class="list-unstyled">
@@ -403,7 +509,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="copyright-text">
-                    <p>Copyright &copy; 2022 | Designed With <i class="fa fa-heart"></i> by <a href="" target="_blank">Ken Ossai</a></p>
+                    <p>Copyright &copy; 2022 | Designed by <a href="" target="_blank">Ken Ossai</a></p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -435,6 +541,7 @@
 <!-- jQuery JS -->
 <script src="{{asset('assets')}}/js/assets/vendor/jquery-3.6.0.min.js"></script>
 <script src="{{asset('assets')}}/js/assets/vendor/jquery-1.12.4.min.js"></script>
+{{-- <script src="{{asset('assets')}}/js/assets/vendor/analytic.js"></script> --}}
 <script src="https://kit.fontawesome.com/f921b1f4f8.js" crossorigin="anonymous"></script>
 
 <!-- Bootstrap -->

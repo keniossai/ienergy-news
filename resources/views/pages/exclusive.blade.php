@@ -151,7 +151,7 @@
                     <div class="col-md-12">
                         <div class="mv-widget">
                             <div class="sec-title">
-                                <h5>Most Viewed</h5>
+                                <h5>Related News</h5>
                             </div>
                             <div class="mv-slider owl-carousel">
                                 <div class="mv-item">

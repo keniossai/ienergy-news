@@ -201,7 +201,7 @@ $(document).ready(function(){
     });
 
 	$(".mv-slider").owlCarousel({
-		autoplay:false,
+		autoplay:true,
 		animateOut: 'fadeOut',
     	autoplayTimeout:4000,
     	autoplayHoverPause:true,

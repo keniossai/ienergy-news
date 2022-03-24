@@ -10,8 +10,8 @@
                 <div class="col-sm-6 col-lg-5 col-xxl-3  align-self-center order-2 order-sm-1">
                     <div class="d-flex align-items-center h-100-vh">
                         <div class="register p-5">
-                            <h1 class="mb-2">We are Mentor</h1>
-                            <p>Welcome, Please create your account.</p>
+                            <img class="w-90" src="{{asset('panel/img/logo-dark.png')}}" alt="">
+                            <p class="mb-5">Welcome, Please create your account.</p>
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="row">

@@ -9,7 +9,7 @@
                 <div class="col-sm-6 col-lg-5 col-xxl-3  align-self-center order-2 order-sm-1">
                     <div class="d-flex align-items-center h-100-vh">
                         <div class="login p-50">
-                            <img class="w-100" src="{{asset('panel/img/logo.png')}}" alt="">
+                            <img class="w-90" src="{{asset('panel/img/logo-dark.png')}}" alt="">
                             <p>Welcome back, please login to your account.</p>
                             @if (session('status'))
                                 <div class="mb-4 font-medium text-sm text-green-600">
