@@ -18,10 +18,9 @@
                             <span>Trending<i class="fa fa-caret-right" aria-hidden="true"></i></span>
                         </div>
                         <ul id="webTicker">
-                            <li><a href=""><i class="fa fa-dot-circle-o"></i>These sentences are selected from various online news.</a></li>
-                            <li><a href=""><i class="fa fa-dot-circle-o"></i>This handout will help you understand how paragraphs are formed.</a></li>
-                            <li><a href=""><i class="fa fa-dot-circle-o"></i>It is usually composed of several sentences that together develop one.</a></li>
-                            <li><a href=""><i class="fa fa-dot-circle-o"></i>The purpose of this handout is to give some basic instruction.</a></li>
+                            @foreach ($trendingPosts as $post)
+                            <li><a href=""><i class="fa fa-dot-circle-o"></i>{{$post->title}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -36,45 +35,38 @@
  <section class="slider-area3">
     <div class="container">
         <div class="row">
+            @foreach ($firstPosts as $post)
             <div class="col-lg-6 col-md-12 slider-fix">
                 <div class="owl-slider owl-carousel">
                     <div class="slider-content">
-                        <img style="height: 300px;" src="{{asset('assets')}}/img/slider-6.jpg" alt="" class="img-fluid">
+                        <img style="height: 300px;" src="{{$post->image}}" alt="" class="img-fluid">
                         <div class="slider-layer">
                             <!-- <h4><a href="newsdetails">This handout will help you understand how paragraphs are formed. It is usually composed of several sentences.</a></h4> -->
                             <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item">FASHION</li>
-                                <li class="list-inline-item">March 11, 2022</li>
+                                <li class="list-inline-item">{{$post->category->name}}</li>
+                                <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <h4><a href="newsdetails">This handout will help you understand how paragraphs are formed. It is usually composed of several sentences.</a></h4>
+                <h4><a href="newsdetails">{{$post->title}}</a></h4>
             </div>
+            @endforeach
+            @foreach ($lastPosts as $post)
             <div class="col-md-3">
                 <div class="slider-sidebar">
-                    <img src="{{asset('assets')}}/img/sl-sidebar-3.jpg" alt="" class="img-fluid">
+                    <img src="{{$post->image}}" alt="" class="img-fluid">
                     <div class="sidebar-layer">
                         <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">SPORTS</li>
-                            <li class="list-inline-item">March 11, 2022</li>
+                            <li class="list-inline-item">{{$post->category->name}}</li>
+                            <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
                         </ul>
                     </div>
                 </div>
-                <h4><a href="newsdetails">This handout will help you understand how paragraphs are formed.</a></h4>
+                <h4><a href="newsdetails">{{$post->title}}</a></h4>
             </div>
-            <div class="col-md-3 sidebar-fix2">
-                <div class="slider-sidebar">
-                    <img src="{{asset('assets')}}/img/sl-sidebar-5.jpg" alt="" class="img-fluid">
-                    <div class="sidebar-layer">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">FASHION</li>
-                            <li class="list-inline-item">March 11, 2022</li>
-                        </ul>
-                    </div>
-                </div>
-                <h4><a href="newsdetails">This handout will help you understand how paragraphs are formed.</a></h4>
-            </div>
+            @endforeach
+            
         </div>
     </div>
 </section>
@@ -91,138 +83,22 @@
                     </div>
                     <div class="more-slider owl-carousel">
                         <div class="more-item">
+                            @foreach ($mostPosts as $post)
                             <div class="more-content d-flex">
                                 <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-1.jpg" alt=""></a>
+                                    <a href="#"><img style="width: 200px;" src="{{$post->image}}" alt=""></a>
                                 </div>
                                 <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
+                                    <h4><a href="newsdetails">{{$post->title}}</a></h4>
                                     <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Life Style</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
+                                        <li class="list-inline-item">{{$post->category->name}}</li>
+                                        <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
                                 </div>
                             </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-2.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Sports</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-3.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Health</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-4.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Fashion</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-7.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Sports</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="more-item">
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-5.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Life Style</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-6.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Health</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-7.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Sports</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-8.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Opinion</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
-                            <div class="more-content d-flex">
-                                <div class="more-img">
-                                    <a href="#"><img src="{{asset('assets')}}/img/more-3.jpg" alt=""></a>
-                                </div>
-                                <div class="img-content">
-                                    <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                    <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Health</li>
-                                        <li class="list-inline-item">March 11, 2022</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque labore, quam voluptatibus ipsum. Exde tenetur, quasi, provident animi magni voluptas fugit Itaque labore quae ad........</p>
-                                </div>
-                            </div>
+                            @endforeach
+                            
                         </div>
                     </div>
                 </div>
@@ -415,90 +291,24 @@
                     <div class="owl-carousel popular-slider">
                         <div class="popular-item">
                             <div class="row">
+                                @foreach ($popularPosts as $post)
                                 <div class="col-md-4">
                                     <div class="pop-box">
                                         <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-1.jpg" alt="" class="img-fluid"></a>
+                                            <a href=""><img src="{{$post->image}}" alt="" class="img-fluid"></a>
                                         </div>
                                         <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
+                                            <h4><a href="newsdetails">{{$post->title}}</a></h4>
                                             <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
+                                                <li class="list-inline-item">{{$post->category->name}}</li>
+                                                <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-2.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-3.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-4.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-5.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-6.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+                                
+                                
                             </div>
                         </div>
                         <div class="popular-item">
@@ -609,46 +419,20 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active">
                             <div class="row">
+                                @foreach ($downPosts as $post)
+                                    
                                 <div class="col-md-3 mt-5">
                                     <div class="lt-item-bg">
-                                        <img src="{{asset('assets')}}/img/lt-bg-3.jpg" alt="" class="img-fluid">
+                                        <img src="{{$post->image}}" alt="" class="img-fluid">
                                         <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
                                         <ul class="list-unstyled list-inline">
-                                            <li class="list-inline-item">Sports</li>
-                                            <li class="list-inline-item">February 11, 2019</li>
+                                            <li class="list-inline-item">{{$post->category->name}}</li>
+                                            <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-3 mt-5">
-                                    <div class="lt-item-bg">
-                                        <img src="{{asset('assets')}}/img/lt-bg-3.jpg" alt="" class="img-fluid">
-                                        <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                        <ul class="list-unstyled list-inline">
-                                            <li class="list-inline-item">Sports</li>
-                                            <li class="list-inline-item">February 11, 2019</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mt-5">
-                                    <div class="lt-item-bg">
-                                        <img src="{{asset('assets')}}/img/lt-bg-3.jpg" alt="" class="img-fluid">
-                                        <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                        <ul class="list-unstyled list-inline">
-                                            <li class="list-inline-item">Sports</li>
-                                            <li class="list-inline-item">February 11, 2019</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mt-5">
-                                    <div class="lt-item-bg">
-                                        <img src="{{asset('assets')}}/img/lt-bg-3.jpg" alt="" class="img-fluid">
-                                        <h4><a href="newsdetails">These sentences are selected from various online news.</a></h4>
-                                        <ul class="list-unstyled list-inline">
-                                            <li class="list-inline-item">Sports</li>
-                                            <li class="list-inline-item">February 11, 2019</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'DESC')->paginate(20);
+        $posts = Post::orderBy('created_at', 'DESC')->paginate(100);
         return view('admin.post.index', compact('posts'));
     }
 
@@ -147,7 +147,7 @@ class PostController extends Controller
             }
 
             $post->delete();
-            Session::flash('Post deleted successfully');
+            Session::flash('success', 'Post deleted successfully');
         }
 
         return redirect()->back();
