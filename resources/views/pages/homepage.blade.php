@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <h4><a href="newsdetails">{{$post->title}}</a></h4>
+                <h4><a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}">{{$post->title}}</a></h4>
             </div>
             @endforeach
             @foreach ($lastPosts as $post)
@@ -63,7 +63,7 @@
                         </ul>
                     </div>
                 </div>
-                <h4><a href="newsdetails">{{$post->title}}</a></h4>
+                <h4><a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}">{{$post->title}}</a></h4>
             </div>
             @endforeach
             
@@ -86,10 +86,10 @@
                             @foreach ($mostPosts as $post)
                             <div class="more-content d-flex">
                                 <div class="more-img">
-                                    <a href="#"><img style="width: 200px;" src="{{$post->image}}" alt=""></a>
+                                    <a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}"><img style="width: 200px;" src="{{$post->image}}" alt=""></a>
                                 </div>
                                 <div class="img-content">
-                                    <h4><a href="newsdetails">{{$post->title}}</a></h4>
+                                    <h4><a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}">{{$post->title}}</a></h4>
                                     <ul class="list-unstyled list-inline">
                                         <li class="list-inline-item">{{$post->category->name}}</li>
                                         <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
@@ -295,10 +295,10 @@
                                 <div class="col-md-4">
                                     <div class="pop-box">
                                         <div class="pop-img">
-                                            <a href=""><img src="{{$post->image}}" alt="" class="img-fluid"></a>
+                                            <a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}"><img src="{{$post->image}}" alt="" class="img-fluid"></a>
                                         </div>
                                         <div class="img-content">
-                                            <h4><a href="newsdetails">{{$post->title}}</a></h4>
+                                            <h4><a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}">{{$post->title}}</a></h4>
                                             <ul class="list-unstyled list-inline">
                                                 <li class="list-inline-item">{{$post->category->name}}</li>
                                                 <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>

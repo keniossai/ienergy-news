@@ -25,7 +25,7 @@ use App\Http\Controllers\CategoryController;
 // Auth::routes();
 
 Route::get('/', [FrontEndController::class, 'homepage'])->name('homepage');
-Route::get('/newsdetails', [FrontEndController::class, 'newsdetails'])->name('newsdetails');
+Route::get('/newsdetails/{slug}', [FrontEndController::class, 'newsdetails'])->name('pages.newsdetails');
 Route::get('/latest-news', [FrontEndController::class, 'latestnews'])->name('latestnews');
 Route::get('/about', [FrontEndController::class, 'region'])->name('region');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');

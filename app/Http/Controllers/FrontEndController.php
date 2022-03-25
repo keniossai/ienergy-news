@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-// use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
@@ -28,9 +28,15 @@ class FrontEndController extends Controller
 
         return view('pages.about');
     }
-    public function newsdetails(){
-
-        return view('pages.newsdetails');
+    public function newsdetails($slug){
+        $post = Post::with('category', 'user')->where('slug', $slug)->first();
+        // $post = Tag::with('tag')->where('slug', $slug)->first();
+        
+        if($post){
+            return view('pages.newsdetails', compact('post'));
+        }else{
+            return redirect('/');
+        }
     }
     public function latestnews(){
 
