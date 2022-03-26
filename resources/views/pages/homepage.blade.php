@@ -83,7 +83,7 @@
                     </div>
                     <div class="more-slider owl-carousel">
                         <div class="more-item">
-                            @foreach ($mostPosts as $post)
+                            @foreach ($moreView as $post)
                             <div class="more-content d-flex">
                                 <div class="more-img">
                                     <a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}"><img style="width: 200px;" src="{{$post->image}}" alt=""></a>
@@ -313,90 +313,24 @@
                         </div>
                         <div class="popular-item">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-7.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-8.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
+                                @foreach ($secondPosts as $post)
+                                    <div class="col-md-4">
+                                        <div class="pop-box">
+                                            <div class="pop-img">
+                                                <a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}"><img src="{{$post->image}}" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="img-content">
+                                                <h4><a href="{{route('pages.newsdetails', ['slug' => $post->slug])}}">{{$post->title}}</a></h4>
+                                                <ul class="list-unstyled list-inline">
+                                                    <li class="list-inline-item">{{$post->category->name}}</li>
+                                                    <li class="list-inline-item">{{$post->created_at->format('M d, Y')}}</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-9.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-10.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-11.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pop-box">
-                                        <div class="pop-img">
-                                            <a href=""><img src="{{asset('assets')}}/img/popular-12.jpg" alt="" class="img-fluid"></a>
-                                        </div>
-                                        <div class="img-content">
-                                            <h4><a href="newsdetails">These sentences are selected from various online news....</a></h4>
-                                            <ul class="list-unstyled list-inline">
-                                                <li class="list-inline-item">FOOD</li>
-                                                <li class="list-inline-item">September 24, 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -419,7 +353,7 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active">
                             <div class="row">
-                                @foreach ($downPosts as $post)
+                                {{-- @foreach ($downPosts as $post)
                                     
                                 <div class="col-md-3 mt-5">
                                     <div class="lt-item-bg">
@@ -431,7 +365,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                @endforeach
+                                @endforeach --}}
                                 
                             </div>
                         </div>

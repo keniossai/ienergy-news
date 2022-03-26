@@ -27,7 +27,7 @@ use App\Http\Controllers\CategoryController;
 Route::get('/', [FrontEndController::class, 'homepage'])->name('homepage');
 Route::get('/newsdetails/{slug}', [FrontEndController::class, 'newsdetails'])->name('pages.newsdetails');
 Route::get('/latest-news', [FrontEndController::class, 'latestnews'])->name('latestnews');
-Route::get('/about', [FrontEndController::class, 'region'])->name('region');
+Route::get('/about', [FrontEndController::class, 'about'])->name('about');
 Route::get('/contact', [FrontEndController::class, 'contact'])->name('contact');
 Route::get('/exclusive-news', [FrontEndController::class, 'exclusive'])->name('exclusive');
 Route::get('/africa-news', [FrontEndController::class, 'africa'])->name('africa');

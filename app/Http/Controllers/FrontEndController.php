@@ -9,18 +9,25 @@ use Illuminate\Http\Request;
 class FrontEndController extends Controller
 {
     public function homepage(){
-        $posts = Post::with('category', 'user')->orderBy('created_at', 'DESC')->take(100)->get();
+        $posts = Post::with('category', 'user')->orderBy('created_at', 'DESC')->limit(6)->get();
         $firstPosts = $posts->splice(0, 1);
         $lastPosts = $posts->splice(0, 2);
-        $mostPosts = $posts->splice(3, 10);
-        $popularPosts = $posts->splice(8, 6);
-        $trendingPosts = $posts->splice(2, 3);
-        $downPosts = $posts->splice(10, 4);
+        // $mostPosts = $posts->splice(3, 10);
+        // $popularPosts = $posts->splice(8, 6);
+        $trendingPosts = $posts->splice(0, 3);
+        // $downPosts = $posts->splice(10, 4);
+
+        $moreNews = Post::with('category', 'user')->orderBy('created_at', 'DESC')->take(14)->get();
+        $moreView = $moreNews->splice(4, 10);
+
+        $popularNews = Post::with('category', 'user')->orderBy('created_at', 'DESC')->take(26)->get();
+        $popularPosts = $popularNews->splice(14, 6);
+        $secondPosts = $popularNews->splice(14, 6);
 
         // return $lastPosts;
 
         $recentPosts = Post::with('category', 'user')->orderBy('created_at', 'DESC')->paginate(100);
-        return view('pages.homepage', compact(['posts', 'recentPosts', 'firstPosts', 'lastPosts', 'mostPosts', 'popularPosts', 'trendingPosts', 'downPosts']));
+        return view('pages.homepage', compact(['posts', 'recentPosts', 'firstPosts', 'lastPosts', 'moreView', 'trendingPosts', 'popularPosts', 'secondPosts']));
     }
 
 

@@ -98,9 +98,9 @@
                                 <div class="portfolio-item">
                                     <img src="{{asset($post->image)}}" alt="gallery-img">
                                     <div class="portfolio-overlay">
-                                        <h5 class="text-white"><a href="javascript:void(0)">{{$post->title}}</a></h5>
+                                        <h5 class="text-white"><a href="{{route('post.show', [$post->id])}}">{{$post->title}}</a></h5>
                                     </div>
-                                    <a class="popup portfolio-img view" href="{{asset($post->image)}}"><i class="fa fa-edit"></i></a>
+                                    <a class="popup portfolio-img view" href="{{asset($post->image)}}"></a>
                                 </div>
                             </div>
                         </div>

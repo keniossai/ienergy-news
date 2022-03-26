@@ -74,13 +74,18 @@
                                 </div>
                                 <div class="tag">
                                     <ul class="list-unstyled list-inline">
-                                        <li class="list-inline-item">Tags :</li>
-                                        <li class="list-inline-item"><a href="">{{$post->tag}}</a>,</li>
+                                        @if ($post->tags()->count() > 0)
+                                            <li class="list-inline-item">Tags :</li>
+                                            @foreach ($post->tags as $tag)
+                                            <li class="list-inline-item"><a href="">#{{$tag->name}}</a>,</li>
+                                            @endforeach                                            
+                                        @endif
+                                        
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        {{-- <div class="col-md-12">
                             <div class="news-author d-flex">
                                 <div class="author-img">
                                     <img src="{{asset('assets')}}/img/author.jpg" alt="">
@@ -98,7 +103,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="col-md-12">
                             <div class="comment-sec">
                                 <div class="sec-title">
